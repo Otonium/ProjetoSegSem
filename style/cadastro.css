@@ -1,0 +1,15 @@
+.dados{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.lado-esquerdo{
+    background-color: #8E7253;
+    color: white;
+}
+
+.lado-direito{
+    background-color: #E3D6C8;
+    color: black;
+}
