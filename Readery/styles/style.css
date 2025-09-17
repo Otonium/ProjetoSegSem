@@ -1,0 +1,123 @@
+body{
+    background-image: url("../assets/img/background.png");
+}
+
+main{
+    padding: 20px 60px;
+    font-family: "Roboto", sans-serif;
+}
+
+/** CABECALHO */
+
+.cabecalho{
+    background-color: var(--marrom-escuro);
+    color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    margin-bottom: 20px;
+}
+
+.alinhamento-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.titulo-icone{
+    font-size: 1.8em;
+}
+
+.logo{
+    width: 50%;
+}
+
+.link-perfil{
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+/** BUSCA */
+
+.secao-listagem{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.icone-pesquisa{
+    width: 2%;
+}
+
+.alinhamento-busca{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.alinhamento-busca input{
+    padding: 10px 16px;
+    width: 18%;
+    border-radius: 10px;
+    border: 2px solid var(--marrom-claro);
+    transition: border-color .15s ease, box-shadow .15s ease;
+    outline: none;
+}
+
+/** FILTROS */
+
+.alinhamento-busca input:focus,
+.filtros select:focus{
+    border-color: var(--marrom-claro);
+    box-shadow: 0 0 0 3px var(--marrom-escuro);
+}
+
+.filtros{
+    margin-top: 10px;
+}
+
+.filtros select{
+    padding: 8px 50px;
+    border-radius: 10px;
+    border: 2px solid var(--marrom-claro);
+    text-align: center;
+    background-color: var(--branco);
+    transition: border-color .15s ease, box-shadow .15s ease;
+    outline: none;
+    font-weight: 700;
+}
+
+/** BOTÕES */
+
+.alinhamento-genero{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.genero-texto{
+    display: flex;
+    justify-content:end;
+    font-weight: 800;
+    margin-right: 60px;
+    margin-top: 3rem;
+}
+
+.alinhamento-botoes{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.alinhamento-botoes button{
+    background-color: var(--branco);
+    border-radius: 10px;
+    border: 2px solid var(--marrom-claro);
+    width: 180px;
+    font-weight: 700;
+    margin-top: 10px;
+}
