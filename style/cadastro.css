@@ -1,15 +1,102 @@
+*{
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.container-cadastro{
+    margin: 0;
+    background-image: url(../imagens/cadastro\ alta\ fidelidade.png);
+    grid-template-columns: 1fr 2fr;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .dados{
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    max-height: 100%;
+    width: 1440px;
 }
 
 .lado-esquerdo{
-    background-color: #8E7253;
     color: white;
+    margin-left: 35px;
+    margin-top: 340px;
+}
+
+.titulo-esquerdo{
+    width: 575px;
+    height: 295px;
+    font-size: 30px;
+}
+
+.descricao-esquerda{
+    margin-top: 40px;
+    font-size: 15px;
 }
 
 .lado-direito{
-    background-color: #E3D6C8;
     color: black;
+    margin-right: 50px;
+}
+
+.titulo-direito{
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.descricao-direita{
+    font-size: 16px;
+}
+
+.campo-nome{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    font-size: 24px;
+}
+
+.campo-email{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    font-size: 24px;
+}
+
+.campo-senha{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    font-size: 24px;
+}
+
+input{
+    margin-top: 5px;
+    width: 580px;
+    height: 60px;
+    border-radius: 50px;
+    border: 5px solid #B8A28B;
+    padding: 5px;
+    background-color: #E3D6C8;
+    font-size: large;
+    align-items: center;
+}
+
+.requerimento-senha{
+    color: #BDAA95;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.cadastro{
+    margin-top: 70px;
+    height: 70px;
+    width: 580px;
+    background-color: #B8A28B;
+    border-radius: 50px;
+    border: 0px;
+    font-size: 24px;
 }
