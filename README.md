@@ -1,6 +1,6 @@
-Esse é um pequeno projeto desenvolvido no SENAI, ele se baseia em na criação de um site na qual organiza os livros que você leu, está lendo e a ler. 
+Esse é um pequeno projeto desenvolvido no SENAI, ele se baseia na criação de um site na qual organiza os livros que você leu, está lendo e quer ler. 
 
-O objetivo dele é para os amantes de leitura que queiram organizar seus livros e acompanhar o mundo da literatura vendo as tendências literárias da atualidade. 
+O site foi criado para os amantes de leitura, que buscam uma forma de organizar suas leituras e acompanhar o mundo da literatura vendo as tendências literárias da atualidade. 
 
  
 
@@ -8,7 +8,7 @@ Funções:
 
  
 
--Editar sua lista de livro, podendo alterar o estado de sua leitura e até mesmo excluir o livro lendo. 
+-Editar sua lista de livros, podendo alterar o estado de sua leitura e até mesmo excluir um livro indesejado. 
 
 -Ranquear a qualidade do livro a partir de nota e estrela. 
 
