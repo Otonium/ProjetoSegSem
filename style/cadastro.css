@@ -5,28 +5,30 @@
 
 .container-cadastro{
     margin: 0;
-    background-image: url(../imagens/cadastro\ alta\ fidelidade.png);
+    background-image: url(../imagens/fundo\ cadastro.png);
+    background-size: 100vw;
     grid-template-columns: 1fr 2fr;
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: 100% 100%;
 }
 
 .dados{
     display: flex;
     justify-content: space-between;
     max-height: 100%;
-    width: 1440px;
+    width: 100vw;
 }
 
 .lado-esquerdo{
     color: white;
     margin-left: 35px;
-    margin-top: 340px;
+    margin-top: 15%;
 }
 
 .titulo-esquerdo{
-    width: 575px;
-    height: 295px;
+    width: 50%;
+    height: 30%;
     font-size: 30px;
 }
 
@@ -75,13 +77,13 @@
 
 input{
     margin-top: 5px;
-    width: 580px;
-    height: 60px;
+    width: 35vw;
+    height: 7vh;
     border-radius: 50px;
     border: 5px solid #B8A28B;
     padding: 5px;
     background-color: #E3D6C8;
-    font-size: large;
+    font-size: 25px;
     align-items: center;
 }
 
@@ -93,10 +95,45 @@ input{
 
 .cadastro{
     margin-top: 70px;
-    height: 70px;
-    width: 580px;
+    height: 7vh;
+    width: 35vw;
     background-color: #B8A28B;
     border-radius: 50px;
     border: 0px;
     font-size: 24px;
+}
+
+@media(max-width: 1210px){
+    .lado-esquerdo{
+        margin-top: 20%;
+    }
+    .titulo-esquerdo{
+        font-size: 25px;
+    }
+
+    .titulo-direito{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 1000px)
+{
+    .titulo-esquerdo{
+        font-size: 20px;
+    }
+
+    .titulo-direito{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 810px)
+{
+    .titulo-esquerdo{
+        font-size: 15px;
+    }
+
+    .titulo-direito{
+        font-size: 15px;
+    }
 }
