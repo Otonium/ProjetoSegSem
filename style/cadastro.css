@@ -87,6 +87,22 @@ input{
     font-size: 24px;
 }
 
+.linha-separativa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35vw;
+    font-size: 16px;
+}
+
+.linha-decorativa{
+    width: 20vw;
+    height: 2px;
+    background-color: black;
+    margin: 6% 5%;
+    opacity: 0.5;
+}
+
 .google{
     display: flex;
     justify-content: center;
@@ -95,7 +111,7 @@ input{
     height: 10vh;
     width: 35vw;
     font-size: 24px;
-    margin-top: 70px;
+
     border: 10px solid #B8A28B;
     border-radius: 50px;
     background-color: #E3D6C8;
