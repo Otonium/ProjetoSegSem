@@ -1,24 +1,28 @@
 //* Coleta de dados do HTML
 
-const elNome = document.getElementById('campo-nome')
+const elDados = document.getElementById('form-dados')
+
 const elIdNome = document.querySelector('#name')
 
-const elEmail = document.getElementById('campo-email')
-const elIdEmail = document.getElementById('email')
+const elIdEmail = document.querySelector('#email')
 
-const elSenha = document.getElementById('campo-senha')
-const elIdSenha = document.getElementById('senha')
+const elIdSenha = document.querySelector('#senha')
 
-//* Salvar informacoes do nome
-
-elNome.addEventListener('submit', n =>{
+//* Salvar informacoes do usuario
+elDados.addEventListener('submit', n =>{
 
     //impedir o comportamento padrao de recarregar a pagina
     n.preventDefault();
 
     const nome = elIdNome.value.trim();
+    const email = elIdEmail.value.trim();
+    const senha = elIdSenha.value.trim();
 
     if(!nome) return;
+    if(!senha) return;
+    if(!email) return;
 
-    console.log(nome);
+    console.log(nome)
+    console.log(senha)
+    console.log(email)
 })

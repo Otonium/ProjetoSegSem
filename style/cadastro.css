@@ -51,24 +51,8 @@
     font-size: 16px;
 }
 
-.campo-nome{
+.campo-dados{
     margin-top: 45px;
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
-    font-size: 24px;
-}
-
-.campo-email{
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
-    font-size: 24px;
-}
-
-.campo-senha{
-    margin-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: self-start;
@@ -101,6 +85,26 @@ input{
     border-radius: 50px;
     border: 0px;
     font-size: 24px;
+}
+
+.google{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    align-items: center;
+    height: 10vh;
+    width: 35vw;
+    font-size: 24px;
+    margin-top: 70px;
+    border: 10px solid #B8A28B;
+    border-radius: 50px;
+    background-color: #E3D6C8;
+    margin-bottom: 15px;
+}
+
+.imagem-google{
+    width: 4vh;
+    height: auto;
 }
 
 @media(max-width: 1210px){
