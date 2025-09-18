@@ -81,7 +81,8 @@ main{
 }
 
 .filtros select{
-    padding: 8px 50px;
+    width: 13vw;
+    height: 4vh;
     border-radius: 10px;
     border: 2px solid var(--marrom-claro);
     text-align: center;
@@ -103,7 +104,7 @@ main{
     display: flex;
     justify-content:end;
     font-weight: 800;
-    margin-right: 60px;
+    margin-right: 4.5vw;
     margin-top: 3rem;
 }
 
@@ -117,7 +118,113 @@ main{
     background-color: var(--branco);
     border-radius: 10px;
     border: 2px solid var(--marrom-claro);
-    width: 180px;
+    width: 10vw;
     font-weight: 700;
     margin-top: 10px;
+}
+
+.alinhamento-botoes button:hover{
+    background-color: var(--marrom-claro);
+    border-color: var(--marrom-escuro);
+    transition: border-color .30s ease;
+    cursor: pointer;
+}
+
+/** CARDS  */
+
+.secao-livros{
+    margin-top: 3vh;
+    display: flex;
+    gap: 50px;
+}
+
+.espaco-card{
+    display: flex;
+    flex-direction: column;
+    max-width: 13vw;
+    
+}
+
+.card-dentro{
+    background-color: var(--marrom-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid var(--marrom-muito-escuro);
+    border-radius: 10px;
+    
+    padding: 10px 10px;
+    
+}
+
+.img-card{
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+.text-card{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.textos{
+    height: 12vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.textos::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(transparent, var(--marrom-claro));
+}
+
+/** BOTAO DO CARD */
+
+.botao-card{
+    font-size: 1.5rem;
+    color: var(--marrom-muito-escuro);
+    background-color: var(--marrom-claro);
+    border: none;
+}
+
+.botao-card:hover{
+    color: var(--branco);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.card-dentro.active .textos{
+    height: auto;
+}
+
+.card-dentro.active .textos::before{
+    visibility: hidden;
+}
+
+
+/** TEXTO FORA DO CARD */
+
+.card-fora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.notas{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.estrela, .estrela2, .estrela3, .estrela4, .estrela5{
+    font-size: 1.4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
