@@ -1,3 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --marrom-claro: #E3D6C8;
+    --marrom: #B8A28B;
+    --marrom-escuro: #8E7253;
+    --branco: #FFFFFF;
+    --preto: #000000;
+}
+
 * {
-    background-image: url(../img-login/fundo-folhas.png)
+    font-family: "Roboto", sans-serif;
+    color: var(--preto);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.container-login {
+    background-image: url(../img-login/fundo-folhas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    width: 100vw;
+    height: 100vh;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 50%;
+}
+
+input {
+    width: 345px;
+    height: 80px;
+    background-color: var(--marrom);
+    border: none;
+    margin-top: 5%;
+    padding: 10%;
+}
+
+::placeholder {
+    color: var(--branco);
+    font-size: 200%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.login-usuario, .login-senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.icone-usuario, .icone-senha {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    transform: translateY(-40%);
+}
+
+.icone-usuario img {
+    width: 37px;
+    height: 37px;
+    transform: translateY(4%);
+}
+
+.link-esqueci {
+    color: var(--preto);
+    text-decoration: none;
+    margin-top: 1%;
+    margin-left: 13.2%;
+}
+
+a:hover {
+    color: var(--marrom-escuro);
+    text-decoration: underline;
+}
+
+.lembre-se {
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.lembre-se p {
+    
+}
+
+.lembre-se input {
+    width: 70%;
+    height: 70%;
+    background-color: var(--marrom-escuro);
 }
