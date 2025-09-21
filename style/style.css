@@ -39,11 +39,11 @@ html
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35%;
-    height: 50%;
+    width: 25%;
+    height: 30%;
 }
 
-input {
+.forms input {
     width: 345px;
     height: 80px;
     background-color: var(--marrom);
@@ -80,17 +80,17 @@ input {
 .icone-usuario img {
     width: 37px;
     height: 37px;
-    transform: translateY(4%);
+    transform: translateY(8%);
 }
 
 .link-esqueci {
     color: var(--preto);
     text-decoration: none;
     margin-top: 1%;
-    margin-left: 13.2%;
+    margin-left: 11%;
 }
 
-a:hover {
+.link-esqueci:hover {
     color: var(--marrom-escuro);
     text-decoration: underline;
 }
@@ -100,16 +100,52 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 5%;
-}
-
-.lembre-se p {
-    
+    margin-right: 14.5%;
 }
 
 .lembre-se input {
     width: 70%;
     height: 70%;
     background-color: var(--marrom-escuro);
+}
+
+.botoes { 
+    flex-direction: column;
+    display: flex;
+    margin: 1%;
+    width: 17%;
+    height: 30%;
+}
+
+.botao-entrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--marrom);
+    padding: 7%;
+    color: var(--branco);
+    font-size: 1.4rem;
+    margin-bottom: 4%;
+}
+
+.botao-entrar:hover, .botao-cadastro:hover {
+    background-color: var(--marrom-claro);
+    color: var(--marrom-escuro);
+    border-color: var(--marrom-escuro);
+    border-radius: 2%;
+}
+
+.botao-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--marrom-escuro);
+    padding: 7%;
+    color: var(--branco);
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.login-erro {
+    display: none;
 }
