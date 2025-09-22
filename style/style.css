@@ -52,7 +52,7 @@ html
     padding: 10%;
 }
 
-::placeholder {
+.forms input::placeholder {
     color: var(--branco);
     font-size: 200%;
     text-align: center;
@@ -101,12 +101,10 @@ html
     flex-direction: row;
     align-items: center;
     margin-right: 14.5%;
-}
-
-.lembre-se input {
-    width: 70%;
-    height: 70%;
-    background-color: var(--marrom-escuro);
+    white-space: nowrap;
+    font-size: 0.9rem;
+    gap: 3%;
+    accent-color: var(--marrom-escuro);
 }
 
 .botoes { 
@@ -122,17 +120,11 @@ html
     justify-content: center;
     align-items: center;
     background-color: var(--marrom);
+    border: none;
     padding: 7%;
     color: var(--branco);
     font-size: 1.4rem;
     margin-bottom: 4%;
-}
-
-.botao-entrar:hover, .botao-cadastro:hover {
-    background-color: var(--marrom-claro);
-    color: var(--marrom-escuro);
-    border-color: var(--marrom-escuro);
-    border-radius: 2%;
 }
 
 .botao-cadastro {
@@ -142,9 +134,17 @@ html
     background-color: var(--marrom-escuro);
     padding: 7%;
     color: var(--branco);
+    border: none;
     font-size: 1.4rem;
     text-decoration: none;
 }
+
+.botao-entrar:hover, .botao-cadastro:hover {
+    background-color: var(--marrom-claro);
+    color: var(--marrom-escuro);
+    border: 2px solid var(--marrom-escuro);
+}
+
 
 .login-erro {
     display: none;
