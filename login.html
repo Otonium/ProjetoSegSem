@@ -12,41 +12,38 @@
 <body>
     <main class="container-login">
 
-        <img src="img-login/logo.png" alt="Logo Readery" class="logo-login">
+        <div class="borda">
 
-        <section class="forms">
-            <form class="usuario">
-                <div class="login-usuario">
-                    <span class="icone-usuario">
-                        <img src="img-login/usuario.png" alt="Ícone de usuário">
-                    </span>
-                    <input type="text" id="usuario" placeholder="Usuário" required>
-                </div>
-            </form>
+            <img src="img-login/logo.png" alt="Logo Readery" class="logo-login">
 
-            <form class="senha">
-                <div class="login-senha">
-                    <span class="icone-senha">
-                        <img src="img-login/cadeado.svg" alt="Ícone de cadeado">
-                    </span>
-                    <input type="password" id="senha" placeholder="Senha" required>
-                </div>
-            </form>
-        </section>
+            <section class="forms">
+                <form class="usuario">
+                    <div class="login-usuario">
+                        <input type="text" id="usuario" placeholder="Usuário" required>
+                    </div>
+                </form>
 
-        <a href="" class="link-esqueci">Esqueci minha senha</a>
+                <form class="senha">
+                    <div class="login-senha">
+                        <input type="password" id="senha" placeholder="Senha" required>
+                    </div>
+                </form>
+            </section>
 
-        <div class="lembre-se">
-            <input type="checkbox" id="lembre-se">Lembre-se de mim
+            <a href="" class="link-esqueci">Esqueci minha senha</a>
+
+            <div class="lembre-se">
+                <input type="checkbox" id="lembre-se">Lembre-se de mim
+            </div>
+
+            <section class="botoes">
+                <button type="submit" class="botao-entrar">Entrar</button>
+                <a href="" class="botao-cadastro">Cadastre-se</a>
+            </section>
+
+            <p class="login-erro">E-mail e/ou senha incorreto(s)</p>
+
         </div>
-
-        <section class="botoes">
-            <button type="submit" class="botao-entrar">Entrar</button>
-            <a href="" class="botao-cadastro">Cadastre-se</a>
-        </section>
-
-        <p class="login-erro">E-mail e/ou senha incorreto(s)</p>
-
     </main>
 </body>
 
