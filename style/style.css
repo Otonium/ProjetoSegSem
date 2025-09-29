@@ -29,7 +29,7 @@ html
     background-attachment: fixed; 
     width: 100vw;
     height: 100vh;
-    padding: 3%;
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +38,8 @@ html
 
 .borda {
     border: 7px solid var(--preto);
-    padding: 70px;
+    position: relative;
+    padding: 80px 70px;
     border-color: var(--marrom-escuro);
     background-color: var(--marrom-claro);
 }
@@ -47,11 +48,11 @@ html
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 30%;
     height: auto;
-    position: relative;
-    left: 25%;
-    bottom: 30%;
+    position: absolute;
+    left: 35%;
+    bottom: 90%;
 }
 
 .forms {
@@ -151,4 +152,30 @@ html
 
 .login-erro {
     display: none;
+}
+
+/*RESPONSIVIDADE - MEDIA QUERY*/
+
+@media (max-width: 500px) {
+    .container-login {
+        background-position: center;
+    }
+
+    .forms input {
+        width: 200%;
+        height: 200%;
+    }
+
+    .borda {
+        width: 90%;
+    }
+
+    .link-esqueci {
+        margin-left: 40%;
+        font-size: 0.8rem;
+    }
+
+    .botao-entrar, .botao-cadastro {
+        font-size: 1rem;
+    }
 }
