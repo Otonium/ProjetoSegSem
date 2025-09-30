@@ -167,12 +167,12 @@ html
     }
 
     .borda {
-        width: 90%;
+        width: 80%;
     }
 
     .link-esqueci {
-        margin-left: 40%;
-        font-size: 0.8rem;
+        margin-left: 25%;
+        font-size: 0.7rem;
     }
 
     .botao-entrar, .botao-cadastro {
