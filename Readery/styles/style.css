@@ -49,19 +49,26 @@ main{
 }
 
 .icone-pesquisa{
-    width: 2%;
+    width: 10%;
+    text-align: center;
 }
 
 .alinhamento-busca{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 1em;
 }
 
-.alinhamento-busca input{
+.lupa-barra{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}   
+
+.lupa-barra input{
     padding: 10px 16px;
-    width: 18%;
+    width: 90%;
     border-radius: 10px;
     border: 2px solid var(--marrom-claro);
     transition: border-color .15s ease, box-shadow .15s ease;
@@ -70,7 +77,7 @@ main{
 
 /** FILTROS */
 
-.alinhamento-busca input:focus,
+.lupa-barra input:focus,
 .filtros select:focus{
     border-color: var(--marrom-claro);
     box-shadow: 0 0 0 3px var(--marrom-escuro);
@@ -123,11 +130,21 @@ main{
     margin-top: 10px;
 }
 
-.alinhamento-botoes button:hover{
+.alinhamento-botoes button:hover, .adiciona-livro:hover{
     background-color: var(--marrom-claro);
     border-color: var(--marrom-escuro);
     transition: border-color .30s ease;
     cursor: pointer;
+}
+
+.adiciona-livro{
+    background-color: var(--branco);
+    border-radius: 10px;
+    border: 2px solid var(--marrom-claro);
+    width: 10vw;
+    font-weight: 700;
+    margin-top: 10px;
+    height: 4vh;
 }
 
 /** CARDS  */
@@ -135,7 +152,8 @@ main{
 .secao-livros{
     margin-top: 3vh;
     display: flex;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 100px;
 }
 
 .espaco-card{
@@ -224,6 +242,101 @@ main{
 
 .estrela, .estrela2, .estrela3, .estrela4, .estrela5{
     font-size: 1.4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.lixeira{
+    margin-left: 10rem;
+}
+
+.remover{
+    background: rgb(192, 3, 3);
+    border: none;
+    border-radius: 10px;
+    color: var(--branco);
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.remover:hover{
+    box-shadow: 0 0 0 2px rgb(124, 3, 3);
+    transition: all 0.2s ease;
+}
+
+
+/** LINHAS */
+
+.linha-vertial{
+    width: 40px;
+    background-color: var(--marrom-escuro);
+}
+
+
+/** MEU MODAL */
+
+.meu-modal::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.meu-modal{ 
+    padding: 4%;
+    margin-top: 15%;
+    margin-left: 30%;
+    border-radius: 10px;
+    border: 3px solid var(--marrom-muito-escuro);
+    background-color: var(--marrom-claro);
+}
+
+.div-Modal{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.botao-cancela-modal{
+    background: rgb(192, 3, 3);
+    border: 3px solid rgb(130, 3, 3);
+    border-radius: 10px;
+    color: var(--branco);
+    padding: 5px;
+    cursor: pointer;
+    width: 30%;
+    font-size: 1rem;
+}
+
+.botao-exclui-modal{
+    background: rgb(9, 161, 29);
+    border: 3px solid rgb(7, 120, 22);
+    border-radius: 10px;
+    color: var(--branco);
+    padding: 5px;
+    cursor: pointer;
+    width: 30%;
+    font-size: 1rem;
+}
+
+.botao-cancela-modal:hover{
+    background-color: rgb(130, 3, 3);
+    transition: all 0.2s ease-in-out;
+}
+
+.botao-exclui-modal:hover{
+    background-color: rgb(7, 120, 22);
+    transition: all 0.2s ease-in-out;
+}
+
+.texto-modal{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.img-card2{
+    display: none;
+}
+
+.botao-imagem-card{
     background: none;
     border: none;
     cursor: pointer;

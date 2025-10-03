@@ -22,8 +22,11 @@
     <main>
         <section class="secao-listagem">
             <div class="alinhamento-busca">
-                <img src="assets/icons/lupa.svg" alt="" class="icone-pesquisa">
-                <input type="search" id="filtro-busca" placeholder="Buscar livro...">
+                <button class="adiciona-livro" id="adiciona-livro">Adicionar Livro</button>
+                <div class="lupa-barra">
+                    <img src="assets/icons/lupa.svg" alt="" class="icone-pesquisa">
+                    <input type="search" id="filtro-busca" placeholder="Buscar livro...">
+                </div>
             </div>
 
             <div>
@@ -40,6 +43,7 @@
                     </div>
 
                     <div class="filtros">
+
                         <select id="filtro-genero">
                             <option value="todos">Todos</option>
                             <option value="poesia">Poesia</option>
@@ -58,6 +62,9 @@
         <section class="secao-livros">
             <div class="espaco-card">
                 <div class="card-dentro">
+                    <div class="lixeira">
+                        <button class="remover">X</button>
+                    </div>
                     <img src="assets/img/divinacomedia.png" alt="" class="img-card">
                     <div class="textos">
                         <p class="text-card">Lorem Ipsum is simply dummy text of the printing and ty Lorem Ipsum Dolor
@@ -80,6 +87,7 @@
                 </div>
             </div>
         </section>
+        <img src="assets/img/divinacomedia.png" alt="" class="img-card2">
     </main>
 
 </body>
