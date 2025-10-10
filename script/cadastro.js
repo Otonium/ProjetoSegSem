@@ -8,6 +8,8 @@ const elIdEmail = document.querySelector('#email')
 
 const elIdSenha = document.querySelector('#senha')
 
+const elIdCampoDados = document.querySelector('#form-dados')
+
 //* Salvar informacoes do usuario
 elDados.addEventListener('submit', n =>{
 
@@ -18,11 +20,18 @@ elDados.addEventListener('submit', n =>{
     const email = elIdEmail.value.trim();
     const senha = elIdSenha.value.trim();
 
-    if(!nome) return;
-    if(!senha) return;
-    if(!email) return;
+    if(!nome || !senha || !email){ 
+    let 
+      const h3 = document.createElement('h3')  
+      h3.className = "Falha"
+      h3.textContent = "Elemento nao preenchido corretamente"
+      h3.dataset.id = h3.id
+
+      elIdCampoDados.appendChild(h3); // adiciona o aviso à página
+        return;
+    }
 
     console.log(nome)
-    console.log(senha)
     console.log(email)
+    console.log(senha)
 })
