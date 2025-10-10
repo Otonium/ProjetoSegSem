@@ -149,8 +149,13 @@ html
     border: 2px solid var(--marrom-escuro);
 }
 
-
 .login-erro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 0.7rem;
+    color: #B40000;
     display: none;
 }
 
