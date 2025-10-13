@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <script src="script/script.js"></script>
+    <script defer src="script/script.js"></script>
     <title>Redefinição de senha - Readery</title>
 </head>
 
 <body>
     <main class="container-redefinicao">
-
         <div class="borda">
+            <form id="resetForm">
+                <section class="form">
+                    <div class="email-input"> <label for="email">Para redefinir sua senha, insira seu email:</label>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                </section>
+                
+                <p id="mensagemFeedback" style="color: red; margin-top: 15px; visibility: hidden;">
+                    </p>
 
-            <section class="form">
-                <form class="email">
-                    <label for="email">Para redefinir sua senha, insira seu email:</label>
-                    <input type="email" id="email" placeholder="Email" required>
-                </form>
-            </section>
-
-            <section class="botao">
-                <button type="submit" class="botao-enviar">Enviar</button>
-            </section>
+                <section class="botao">
+                    <button type="submit" id="botaoEnviar" class="botao-enviar">Enviar</button>
+                </section>
+            </form>
             
         </div>
     </main>

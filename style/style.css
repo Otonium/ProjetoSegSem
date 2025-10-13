@@ -95,6 +95,17 @@ html
     border: 2px solid var(--marrom-escuro);
 }
 
+.input-error {
+    border: 2px solid #B40000 !important; 
+    box-shadow: 0 0 5px rgba(180, 0, 0, 0.7); 
+}
+
+#mensagemFeedback {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 /*RESPONSIVIDADE - MEDIA QUERY*/
 
 @media (max-width: 600px) {
