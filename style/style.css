@@ -149,14 +149,15 @@ html
     border: 2px solid var(--marrom-escuro);
 }
 
-.login-erro {
+.loginErro {
+    color: #B40000; 
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    white-space: nowrap;
-    font-size: 0.7rem;
-    color: #B40000;
-    display: none;
+    visibility: hidden; 
+}
+
+.input-error {
+    border: 3px solid #B40000 !important; 
+    box-shadow: 0 0 5px rgba(180, 0, 0, 0.7); 
 }
 
 /*RESPONSIVIDADE - MEDIA QUERY*/

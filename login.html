@@ -5,43 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <script src="script/script.js"></script>
+    <script defer src="script/script.js"></script>
     <title>Login - Readery</title>
 </head>
 
 <body>
     <main class="container-login">
-
         <div class="borda">
-
             <img src="img-login/logo.png" alt="Logo Readery" class="logo-login">
-
-            <section class="forms">
-                <form class="usuario">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" id="usuario" placeholder="Nome de usuário" required>
-                </form>
-
-                <form class="senha">
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="*******" required>
-                </form>
-            </section>
-
-            <a href="" class="link-esqueci">Esqueci minha senha</a>
-
-            <p class="login-erro">E-mail e/ou senha incorreto(s)</p>
-
-            <div class="lembre-se">
-                <input type="checkbox" id="lembre-se">Lembre-se de mim
-            </div>
-
-            <section class="botoes">
-                <button type="submit" class="botao-entrar">Entrar</button>
-                <a href="" class="botao-cadastro">Cadastre-se</a>
-            </section>
-
-
+    
+            <form id="loginForm"> 
+                <section class="forms">
+                    <div class="usuario">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" id="usuario" placeholder="Nome de usuário" required>
+                    </div>
+    
+                    <div class="senha">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" placeholder="*******" required>
+                    </div>
+                </section>
+    
+                <a href="#" class="link-esqueci">Esqueci minha senha</a>
+    
+                <p id="mensagemErro" class="loginErro">E-mail e/ou senha incorreto(s)</p>
+    
+                <div class="lembre-se">
+                    <input type="checkbox" id="lembre-se">Lembre-se de mim
+                </div>
+    
+                <section class="botoes">
+                    <button type="submit" id="botaoEntrar" class="botao-entrar">Entrar</button>
+                    <a href="#" class="botao-cadastro">Cadastre-se</a>
+                </section>
+            </form>
         </div>
     </main>
 </body>
