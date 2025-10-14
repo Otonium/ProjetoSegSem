@@ -18,7 +18,7 @@
     background-size: cover;
     background-size: 100% 100%;
     margin: 0;
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
 }
 
@@ -69,7 +69,10 @@
 }
 
 h3{
-    font-size: 10px;
+    color: red;
+    align-items: center;
+    font-size: 90%;
+    margin-left: 15%;
 }
 
 input {
@@ -224,7 +227,7 @@ input {
     }
 
     .cadastro {
-        margin-top: 70px;
+        margin-top: 8px;
         height: 7vh;
         width: 80vw;
         border-radius: 50px;
