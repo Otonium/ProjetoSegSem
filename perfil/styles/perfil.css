@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primaria: #E3D6CB;
+    --secundaria: #BE7253;
+    --tercearia: #BBA28B;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Merriweather', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
