@@ -1,0 +1,39 @@
+nav {
+    background-color: brown;
+    justify-content:space-between;
+    display: flex;
+}
+
+.Logo-readery {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.Login {
+    margin-top: 25px;
+    margin-right: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+}
+
+.Bem-vindo {
+    margin: 80px; 
+    margin-top: 200px;
+    font-size: 50px;
+}
+
+.Arvore {
+    height: 600px;
+}
+
+.Destaques {
+    background-color: brown;
+    justify-content: space-between;
+    justify-content: center;
+    display: flex;
+}
