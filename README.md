@@ -15,7 +15,3 @@ Funções:
 -Criar observações sobre o livro. 
 
 -Filtrar os livros de acordo com sua classe (A ler, lendo, finalizado) 
-
- 
-
-Como usar: 
