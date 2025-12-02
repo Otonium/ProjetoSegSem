@@ -1,0 +1,270 @@
+:root 
+{
+    --bege: #E3D6C8;
+    --vermelho: #d40000;
+    --begeescuro: #B8A28B;
+    --corfolhas: #cdb69d;
+}
+
+.modal 
+{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 80%;
+    background-color: var(--bege);
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 6px;
+}
+
+.overlay 
+{
+    display: none;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+
+}
+
+.botao-fechar 
+{
+    background-color: #d13e3e; 
+    border-radius: 6px;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.botao-fechar:hover
+{
+    background-color: #964444;
+}
+
+.botao-salvar
+{
+    background-color: var(--begeescuro);
+    border-radius: 3px;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 40%;
+    margin: 5px;
+    font-weight: 550;
+    height: 25px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    width: 110px;
+    margin-bottom: 5px;
+}
+
+.botao-salvar:hover
+{
+    background-color: #9b876c;
+}
+
+.titulo-topo, .botao-foto, .nome, .genero, .sinopse
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.topo 
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.titulo-topo 
+{
+    position: relative;
+    z-index: 0;
+    top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--begeescuro);
+    width: 155px;
+    height: 35px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.meio 
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.vl 
+{
+    border-left: 2px solid var(--begeescuro);
+    opacity: 60%;
+    height: 350px;
+    left: 50%;
+    top: 0;
+    border-radius: 1px;
+    z-index: 0;
+}
+
+.meio-esquerda,
+.meio-direita 
+{
+    width: 48%;
+    height: 80%;
+    position: absolute;
+    z-index: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meio-esquerda 
+{
+    left: 0px;
+}
+
+.meio-direita 
+{
+    right: 0;
+    flex-direction: column;
+}
+
+
+.folha1,
+.folha2,
+.folha3,
+.folha4 
+{
+    width: 15%;
+    height: auto;
+    min-width: 50px;
+    max-width: 90px;
+    z-index: -1;
+    position: absolute;
+}
+
+.folha1
+{
+    left: 0px;
+    top: 0px;
+}
+
+.folha2 
+{
+    left: 15px;
+    bottom: 25px;
+}
+
+.folha3 
+{
+    bottom: 10px;
+    right: 20px;
+    transform: rotate(45deg);
+}
+
+.folha4 
+{
+    right: 15px;
+    top: 25px;
+}
+
+.foto 
+{
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-foto 
+{
+    margin-top: 10px;
+    padding: 8px 16px;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    background-color: var(--begeescuro);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: medium;
+}
+
+
+.botao-foto:hover
+{
+    background-color: #9b876c;
+}
+
+.sem-foto 
+{
+    width: 95%;
+    height: auto;
+    min-width: 190px;
+    max-width: 450px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.input-escondido 
+{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.genero-livro, .sinopse-livro, .nome-texto
+{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.genero-caixa, .sinopse-caixa, .nome-caixa
+{
+    border-radius: 4px;
+    border-width: 1px;
+    width: 200px;
+    padding: 5px;
+}
+
+.nome-caixa, .genero-caixa
+{
+    height: 25px;
+    margin-bottom: 15px;
+}
+
+.sinopse-caixa 
+{
+    height: 150px;
+    resize: none;
+    font-family: inherit;
+}

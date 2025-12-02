@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adição de livros</title>
+    <link rel="stylesheet" href="styles/styleadicao.css">
+    <script defer src="scripts/scriptadicao.js"></script>
+</head>
+
+<body>
+    <button onclick="showModal()">Botão</button>
+    <div class="overlay" id="overlay" onclick="closeModal()"></div>
+    <section class="modal" id="modal">
+        <img src="assets/img/folha1.png" alt="" class="folha1">
+        <img src="assets/img/folha2.png" alt="" class="folha2">
+        <img src="assets/img/folha3.png" alt="" class="folha3">
+        <img src="assets/img/folha4.png" alt="" class="folha4">
+        <section class="topo">
+            <div class="titulo-topo">
+                <p>Adicione um livro!</p>
+            </div>
+        </section>
+        <section class="meio">
+            <section class="meio-esquerda">
+                <div class="foto">
+                    <img src="assets/icons/sem-foto.png" alt="previa da foto" class="sem-foto">
+                    <button class="botao-foto">Adicionar nova foto</button>
+                    <input type="file" id="seletorDeArquivo" name="filename" accept="image/*" class="input-escondido">
+                </div>
+            </section>
+            <section class="meio-direita">
+                <div class="nome">
+                    <label for="nome-livro" class="nome-texto">Nome do livro:</label><br>
+                    <input type="text" id="nome-livro" class="nome-caixa" placeholder="Qual o título do seu livro?" />
+                </div>
+                <div class="genero">
+                    <label for="genero-livro" class="genero-livro">Gênero:</label><br>
+                    <input type="text" id="genero-livro" class="genero-caixa"
+                        placeholder="Qual o gênero do seu livro?" />
+                </div>
+                <div class="sinopse">
+                    <label for="sinopse-livro" class="sinopse-livro">Sinopse:</label><br>
+                    <textarea id="sinopse-livro" class="sinopse-caixa"
+                        placeholder="Do que o seu livro se trata?"></textarea>
+                </div>
+            </section>
+            <span class="vl"></span>
+        </section>
+        <button onclick="closeModal()" class="botao-fechar">X</button>
+        <button onclick="closeModal2()" class="botao-salvar">Salvar livro</button>
+    </section>
+    
+</body>
+
+</html>

@@ -11,7 +11,7 @@
 }
 
 .container-cadastro {
-    background-image: url(../imagens/fundo\ cadastro.png);
+    background-image: url(../assets/img/fundo\ cadastro.png);
     background-size: 100vw;
     grid-template-columns: 1fr 2fr;
     background-repeat: no-repeat;
@@ -151,7 +151,7 @@ input {
     }
 
     .container-cadastro {
-        background-image: url(../imagens/fundo\ cadastro\(mobile\).png);
+        background-image: url(../assets/img/fundo\ cadastro\(mobile\).png);
         height: 130vh;
         width: 120vw;
         background-size: 100% 100%;
