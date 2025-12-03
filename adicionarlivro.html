@@ -22,36 +22,81 @@
                 <p>Adicione um livro!</p>
             </div>
         </section>
-        <section class="meio">
-            <section class="meio-esquerda">
-                <div class="foto">
-                    <img src="imagens/sem-foto.png" alt="previa da foto" class="sem-foto">
-                    <button class="botao-foto">Adicionar nova foto</button>
-                    <input type="file" id="seletorDeArquivo" name="filename" accept="image/*" class="input-escondido">
-                </div>
+
+        <form id="form-adicao-livro" method="POST" enctype="multipart/form-data">
+
+            <section class="meio">
+                <section class="meio-esquerda">
+                    <div class="foto">
+                        <img src="imagens/sem-foto.png" id="previa" class="sem-foto">
+                        <label for="input-file" class="botao-foto">Adicionar nova foto</label>
+                        <input type="file" id="input-file" name="filename" accept="image/jpeg, image/png, image/jpg"
+                            class="input-escondido">
+                    </div>
+                </section>
+                <section class="meio-direita">
+                    <div class="nome">
+                        <label for="nome-livro" class="nome-texto">Nome do livro:</label><br>
+                        <input type="text" id="nome-livro" name="nome-livro" class="nome-caixa"
+                            placeholder="Qual o título do seu livro?" />
+                    </div>
+                    <div class="nome">
+                        <label for="nome-autor" class="autor-texto">Autor:</label><br>
+                        <input type="text" id="nome-autor" name="autor-livro" class="autor-caixa"
+                            placeholder="Qual o nome do autor?" />
+                    </div>
+                    <div class="genero">
+                        <label for="genero-livro" class="genero-livro">Gênero:</label><br>
+                        <input list="generos" id="genero-livro" name="genero-livro" class="genero-caixa"
+                            placeholder="Qual o gênero do seu livro?" />
+                        <datalist id="generos">
+                            <option value="Autoajuda">
+                            <option value="Biografia">
+                            <option value="Clássico">
+                            <option value="Desenvolvimento Pessoal">
+                            <option value="Distopia">
+                            <option value="Fantasia">
+                            <option value="Ficção Científica">
+                            <option value="Histórico">
+                            <option value="Horror">
+                            <option value="Literatura Brasileira">
+                            <option value="Literatura Juvenil">
+                            <option value="Mistério">
+                            <option value="Não Ficção">
+                            <option value="Policial">
+                            <option value="Realismo Mágico">
+                            <option value="Romance">
+                            <option value="Suspense">
+                            <option value="Terror">
+                            <option value="Thriller">
+                        </datalist>
+                    </div>
+                    <div class="sinopse">
+                        <label for="sinopse-livro" class="sinopse-livro">Sinopse:</label><br>
+                        <textarea id="sinopse-livro" name="sinopse-livro" class="sinopse-caixa"
+                            placeholder="Do que o seu livro se trata?"></textarea>
+                    </div>
+                    <div class="paginas">
+                        <label for="paginas-livro" class="paginas-livro">N.º de páginas:</label><br>
+                        <input type="number" id="paginas-livro" name="paginas-livro" class="paginas-caixa"
+                            placeholder="Quantas páginas tem seu livro?" />
+                    </div>
+                </section>
+                <span class="vl"></div>
             </section>
-            <section class="meio-direita">
-                <div class="nome">
-                    <label for="nome-livro" class="nome-texto">Nome do livro:</label><br>
-                    <input type="text" id="nome-livro" class="nome-caixa" placeholder="Qual o título do seu livro?" />
-                </div>
-                <div class="genero">
-                    <label for="genero-livro" class="genero-livro">Gênero:</label><br>
-                    <input type="text" id="genero-livro" class="genero-caixa"
-                        placeholder="Qual o gênero do seu livro?" />
-                </div>
-                <div class="sinopse">
-                    <label for="sinopse-livro" class="sinopse-livro">Sinopse:</label><br>
-                    <textarea id="sinopse-livro" class="sinopse-caixa"
-                        placeholder="Do que o seu livro se trata?"></textarea>
-                </div>
-            </section>
-            <span class="vl"></span>
-        </section>
-        <button onclick="closeModal()" class="botao-fechar">X</button>
-        <button onclick="closeModal2()" class="botao-salvar">Salvar livro</button>
+
+            <button onclick="closeModal()" class="botao-fechar" **type="button" **>X</button>
+            <button class="botao-salvar" **type="submit" **>Salvar livro</button>
+
+        </form>
     </section>
-    
+    <script>
+        let previa = document.getElementById("previa");
+        let inputFile = document.getElementById("input-file");
+        inputFile.onchange = function () {
+            previa.src = URL.createObjectURL(inputFile.files[0]);
+        }
+    </script>
 </body>
 
 </html>

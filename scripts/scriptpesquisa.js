@@ -10,8 +10,3 @@ function closeModal()
     document.getElementById("overlay").style.display = "none";
 }
 
-function closeModal() 
-{
-    document.getElementById("modal").style.display = "none";
-    document.getElementById("overlay").style.display = "none";
-}
