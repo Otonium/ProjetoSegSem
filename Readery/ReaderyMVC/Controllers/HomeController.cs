@@ -13,7 +13,6 @@ public class HomeController : Controller
             return RedirectToAction("Index", "Login");
         }
 
-        // viewbag -> mochilinha que carrega as infomações para a view
         ViewBag.Usuario = HttpContext.Session.GetString("UsuarioNome");
         return View();
     }

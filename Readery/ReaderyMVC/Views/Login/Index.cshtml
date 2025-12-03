@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="~/css/login.css" />
     <script src="~/js/script.js" defer></script>
     <style>
-        body {
+       body {
             height: 100vh;
             margin: 0;
             overflow: hidden;
-        }
-    </style>
+        } 
+    </style> 
 </head>
 
 <body>
 
     <main class="container-login">
-        <div clas="borda">
+        <div class="borda">
             <img src="~/assets/logo.png" alt="Logo Readery" class="logo-login">
 
             <form id="loginForm" asp-controller="Login" asp-action="Entrar" method="post">
@@ -38,7 +38,7 @@
                     </div>
                 </section>
 
-                <a href="#" class="link-esqueci">Esqueci minha senha</a>
+                <a href="~/Redefinicao/Index" class="link-esqueci">Esqueci minha senha</a>
 
                 <p class="erro-login @(ViewBag.Erro != null ? "mostrar" : "")">
                     @ViewBag.Erro
@@ -50,13 +50,12 @@
 
                 <section class="botoes">
                     <button type="submit" id="botaoEntrar" class="botao-entrar">Entrar</button>
-                    <a href="#" class="botao-cadastro">Cadastre-se</a>
+                    <a href="~/Cadastro/Index" class="botao-cadastro">Cadastre-se</a>
                 </section>
             </form>
         </div>
-        </main>
+    </main>
 
 </body>
 
 </html>
-

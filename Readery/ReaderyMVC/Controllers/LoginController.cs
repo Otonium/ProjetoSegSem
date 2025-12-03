@@ -22,14 +22,12 @@ namespace ReaderyMVC.Controllers
         [HttpPost]
         public IActionResult Entrar(string email, string senha)
         {
-            // IsNullOrWhiteSpace - verifica se existe espaços em branco ou se está vazio
             if(string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(senha))
             {
                 ViewBag.Erro = "Preencha todos os campos.";
                 return View("Index");
             }
 
-            // hash da senha digitada
             byte[] senhaDigitadaHash = HashService.GerarHashBytes(senha);
 
             var usuario = _context.Usuarios.FirstOrDefault(usuario => usuario.Email == email);
@@ -49,7 +47,7 @@ namespace ReaderyMVC.Controllers
             HttpContext.Session.SetString("UsuarioNome", usuario.Nome);
             HttpContext.Session.SetInt32("UsuarioId", usuario.IdUsuario);
 
-            return RedirectToAction("Index", "Home"); // substituir HOME por LIVRO
+            return RedirectToAction("Index", "Livro");
         }
 
         public IActionResult Sair()
