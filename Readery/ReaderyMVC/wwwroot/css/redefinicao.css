@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --marrom-claro: #E3D6C8;
+    --marrom: #B8A28B;
+    --marrom-escuro: #8E7253;
+    --branco: #FFFFFF;
+    --preto: #000000;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    color: var(--preto);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-redefinicao {
+    background-image: url(`/../../assets/fundo-folhas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.borda {
+    border: 7px solid var(--preto);
+    padding: 180px 100px;
+    border-color: var(--marrom-escuro);
+    background-color: var(--marrom-claro);
+}
+
+.form {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    gap: 100px;
+}
+
+.form input {
+    width: 345px;
+    height: 55px;
+    background-color: var(--marrom);
+    border: none;
+    margin-top: 5%;
+    padding: 10%;
+}
+
+.form input::placeholder {
+    color: var(--branco);
+    font-size: 100%;
+    display: flex;
+    align-items: self-start;
+}
+
+.form label {
+    display: flex;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-enviar {
+    background-color: var(--marrom);
+    border: none;
+    padding: 7%;
+    color: var(--branco);
+    font-size: 1.4rem;
+    margin-bottom: 4%;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.botao-enviar:hover {
+    background-color: var(--marrom-claro);
+    color: var(--marrom-escuro);
+    border: 2px solid var(--marrom-escuro);
+}
+
+.botao-login {
+    color: var(--marrom-escuro);
+    margin-bottom: 0.5%;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.erro-redefinicao.mostrar {
+    color: #d42000;
+}
+
+.sucesso-redefinicao.mostrar {
+    color: #1a8300;
+}
+
+/*RESPONSIVIDADE - MEDIA QUERY*/
+
+@media (max-width: 600px) {
+    .container-redefinicao {
+        background-position: center;
+    }
+
+    .form input {
+        width: 200%;
+        height: 200%;
+    }
+
+    .borda {
+        width: 80%;
+    }
+
+    .botao-enviar {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .container-redefinicao {
+        background-position: center;
+    }
+
+    .form input {
+        width: 200%;
+        height: 200%;
+    }
+
+    .form label {
+        font-size: 0.8rem;
+    }
+
+    .borda {
+        width: 80%;
+    }
+
+    .botao-enviar {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .form label {
+        font-size: 0.7rem;
+    }
+}
