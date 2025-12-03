@@ -1,0 +1,66 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/styles/cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <main class="container-cadastro">
+        <img src="~/assets/Logo horizontal.png" alt="" class="logo">
+        <!-- Lado esquerdo -->
+        <div class="dados">
+            <section class="lado-esquerdo">
+                <div class="titulo-esquerdo">
+                    <h1>Descubra a melhor maneira de gerenciar sua leitura.</h1>
+                    <p class="descricao-esquerda">Com o Readery é possivel monitorar, editar e gerenciar sua leitura em
+                        tempo real e com apenas um clique</p>
+                </div>
+
+            </section>
+            <!-- lado direito -->
+
+            <section class="lado-direito">
+                <div class="titulo-direito">
+                    <h2 class="titulo">Crie uma nova conta</h2>
+                    <p class="descricao-direita">Crie uma nova conta</p>
+                </div>
+
+                @** Campo para inserir no cadastro  *@
+                <form class="campo-dados" id="form-dados" asp-action="Criar" asp-controller="Cadastro" method="post"> 
+                    <label for="nome-usuario">Nome Usuario:</label>
+                    <input type="text" name="nome" id="name" placeholder="  Seu nome">
+
+                    <label for="email-usuario">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="  email@gmail.com">
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="  senha">
+                    <p class="requerimento-senha">A senha deve ter pelo menos 8 digitos.</p>
+
+
+                    <button class="cadastro" type="submit">Cadastrar</button>
+                    <div class="linha-separativa">
+                        <span class="linha-decorativa"></span>
+                        Ou
+                        <span class="linha-decorativa"></span>
+                    </div>
+                    <button class="google" type="">
+                        <img src="~/assets/google.png" alt="" class="imagem-google">
+                        Entrar com o google
+                    </button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="~/scripts/cadastro.js" defer></script>
+</body>
+
+</html>
