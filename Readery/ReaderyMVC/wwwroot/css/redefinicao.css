@@ -103,6 +103,11 @@ html {
     text-decoration: none;
 }
 
+.botao-login:hover {
+    text-decoration: underline;
+    color: var(--branco);
+}
+
 .erro-redefinicao.mostrar {
     color: #d42000;
 }
