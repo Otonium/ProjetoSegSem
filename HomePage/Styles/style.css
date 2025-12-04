@@ -1,12 +1,20 @@
-/* body {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: #E3D6C8;
-} */
+} 
+
+
 header {
     display: flex; /*coloca na mesma linha*/
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #B8A28B;
+    height: 20vh;
 }
 
 .logo-readery {
@@ -23,22 +31,25 @@ header {
 .Inicio {
     display: flex; /*coloca na mesma linha*/
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
 }
 
 .frase-inicio {
     margin: 50px;
     padding: 50px;
+    font-size: 40px;
     text-align: center;
     display: flex;
     flex-direction: row;
 }
 
 .avre {
-    height: 300px;
+    height: 100%;
+    align-items: normal;
 }
-
+/*Aumentar espaçamento */
 .Destaques-da-semana {
+    font-size: 50px;
     display: flex; /*coloca na mesma linha*/
     justify-content: space-between;
     align-items: center;
@@ -54,20 +65,24 @@ header {
     transform: scale(1.2); /* Aumenta o tamanho da imagem em 20% */
 }
 
-.Pesquisa-genero {
+/* .Pesquisa-genero {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px 20px;
-}
+    height: 100px;
+    background: none;
+} */
 
-.texto-pesquise {
+/* .texto-pesquise {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin: 50px;
-}
+    font-weight: 300px;
+} */
 
-.Pesquisa-botao {
+/* .Pesquisa-botao {
     margin: 50px;
     display: flex;
     align-items: center;
@@ -79,6 +94,17 @@ header {
     text-decoration: none;
     font-weight: 700;
     transition: transform .15s ease;
+} */
+
+/* faz a section ocupar o espaço restante */
+.Pesquisa-genero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 50%; /* Aumenta a altura para 120% da altura da tela */
+    padding: 5%;
 }
 
 .carrossel-livros {
@@ -86,7 +112,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 50px;
 }
 
 .carrossel-livros img {
@@ -101,18 +126,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 150px;
-    /* height: 300px; */
-    background-image: url(../Rectangle\ 143.png);
+    background-image: url("Rectangle 143.png");
+    height: 100%;
 }
 
 .texto-cringe {
     text-shadow: #594747 0.1em 0.1em 0.2em;
     font-size: 30px;
-}
-
-footer {
-    background-color: #B8A28B;
 }
 
 .logo-footer {
@@ -127,9 +147,18 @@ footer {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 100vh;
-    padding: 80px 0;
+    height: AUTO;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
+} 
+
+footer {
+    background-color: #B8A28B;
+    display: flex; /*coloca na mesma linha*/
+    align-items: center;
+    justify-content:space-around;
+}
+
+@media (min-width: 768px) {
 }
