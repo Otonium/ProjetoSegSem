@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReaderyMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+565d1e54e45f4871b7b5d75264aa81dd04447318")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85e42c7f244aecc8d6a8918dda5155823048c1fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReaderyMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReaderyMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

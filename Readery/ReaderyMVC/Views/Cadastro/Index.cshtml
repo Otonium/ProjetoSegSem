@@ -1,3 +1,5 @@
+@model ReaderyMVC.Models.Usuario;
+
 @{
     Layout = null;
 }
@@ -33,18 +35,22 @@
                     <p class="descricao-direita">Crie uma nova conta</p>
                 </div>
 
-                @** Campo para inserir no cadastro  *@
-                <form class="campo-dados" id="form-dados" asp-action="Criar" asp-controller="Cadastro" method="post"> 
+                @** Campo para inserir no cadastro *@
+                <form class="campo-dados" asp-controller="Cadastro" asp-action="Criar" method="post">
                     <label for="nome-usuario">Nome Usuario:</label>
-                    <input type="text" name="nome" id="name" placeholder="  Seu nome">
+                    <input type="text" name="nome" placeholder="  Seu nome">
 
                     <label for="email-usuario">E-mail:</label>
-                    <input type="email" name="email" id="email" placeholder="  email@gmail.com">
+                    <input type="email" name="email" placeholder="  email@gmail.com">
 
                     <label for="senha">Senha:</label>
-                    <input type="password" name="senha" id="senha" placeholder="  senha">
+                    <input type="password" name="senha" placeholder="  senha">
                     <p class="requerimento-senha">A senha deve ter pelo menos 8 digitos.</p>
 
+                    @if(ViewBag.Erro != null)
+                    {
+                        <p class="Falha">@ViewBag.Erro</p>
+                    }
 
                     <button class="cadastro" type="submit">Cadastrar</button>
                     <div class="linha-separativa">
