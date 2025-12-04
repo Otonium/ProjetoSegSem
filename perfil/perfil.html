@@ -9,7 +9,71 @@
 </head>
 
 <body>
+    <section class="alterar-perfil">
+        <aside>
+            <div class="foto-usuario">
+                <img src="assets/icon/Inserir-Foto.png" alt="Campo para inserir a foto de perfil">
+            </div>
+            <div class="botao-upload">
+                <button type="submit">Efetuar upload</button>
+            </div>
+        </aside>
 
+        <main>
+            <div class="titulo">
+                <H1>Perfil</H1>
+            </div>
+            <div class="salvar-mudancas">
+                <button type="submit">Salvar mudanças</button>
+            </div>
+            <button type="submit">Cancelar</button>
+        </main>
+
+        <aside>
+            <form class="form-edicao-perfil">
+                <div class="formulario">
+                    <label for="name" name="AlterarNomeUser">Nome</label>
+                    <input type="name" id="name" placeholder="Seu nome de usuário">
+
+                    <label for="password" name="NovaSenha">Senha</label>
+                    <input type="password" id="password" placeholder="Sua nova senha">
+
+                    <label for="password" name="ConfirmarNovaSenha">Confirmar Senha</label>
+                    <input type="password" id="password" placeholder="Confirmar nova senha">
+                </div>
+            </form>
+        </aside>
+        
+    </section>
 </body>
 
 </html>
+
+<!-- Inserir o codigo abaixo no header da lista de livros -->
+<!--
+    <button id="abrir-modal">Abrir modal</button>
+
+  <dialog id="meu-modal">
+    <h2>Título do Modal</h2>
+    <p>Este é o conteúdo.</p>
+    <button id="fechar-modal">Fechar</button>
+  </dialog> 
+  -->
+
+<!-- Inserir o codigo abaixo em um script js para abrir o modal -->
+<!--
+<script src="script.js"></script>
+ const modal = document.getElementById('meu-modal');
+    const botaoAbrir = document.getElementById('abrir-modal');
+    const botaoFechar = document.getElementById('fechar-modal');
+
+    // Abrir o modal quando o botão for clicado
+    botaoAbrir.addEventListener('click', () => {
+      modal.showModal(); // Use showModal() para o comportamento de modal
+    });
+
+    // Fechar o modal quando o botão de fechar for clicado
+    botaoFechar.addEventListener('click', () => {
+      modal.close();
+    });
+    -->
