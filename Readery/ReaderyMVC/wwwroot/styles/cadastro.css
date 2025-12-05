@@ -80,6 +80,7 @@ input {
     margin-bottom: 10px;
     width: 35vw;
     height: 7vh;
+    padding-left: 4vw;
     border-radius: 50px;
     border: 4px solid #B8A28B;
     padding: 0px;
@@ -102,6 +103,10 @@ input {
     border-radius: 50px;
     border: 0px;
     font-size: 20px;
+}
+
+.cadastro:hover{
+    background-color: #BDAA95;
 }
 
 
@@ -137,6 +142,9 @@ input {
     margin-bottom: 0px;
 }
 
+.google:hover{
+    background-color: rgb(211, 191, 169);
+}
 .imagem-google {
     width: 4vh;
     height: auto;
