@@ -60,7 +60,7 @@
         </section>
 
         <section class="secao-modal-cards">
-              <dialog class="modal-card">
+            <dialog class="modal-card">
                 <div class="fecha-modal-card">
                     <button class="botao-cancela-modal2">X</button>
                 </div>
@@ -168,6 +168,45 @@
         </section>
         <img src="assets/img/divinacomedia.png" alt="" class="img-card2">
     </main>
+
+
+    <!-------------------------------- MODAL PERFIL -------------------------------->
+    <dialog id="modal-perfil" class="modal-perfil">
+        <aside>
+            <div class="foto-usuario">
+                <img src="assets/icon/Inserir-Foto.png" alt="Campo para inserir a foto de perfil">
+            </div>
+            <div class="botao-upload">
+                <button type="submit">Efetuar upload</button>
+            </div>
+        </aside>
+
+        <main>
+            <div class="titulo">
+                <H1>Perfil</H1>
+            </div>
+            <div class="salvar-mudancas">
+                <button type="submit">Salvar mudanças</button>
+            </div>
+            <button id="fechar-modal" type="submit">Cancelar</button>
+        </main>
+
+        <aside>
+            <form class="form-edicao-perfil">
+                <div class="formulario">
+                    <label for="name" name="AlterarNomeUser">Nome</label>
+                    <input type="name" id="name" placeholder="Seu nome de usuário">
+
+                    <label for="password" name="NovaSenha">Senha</label>
+                    <input type="password" id="password" placeholder="Sua nova senha">
+
+                    <label for="password" name="ConfirmarNovaSenha">Confirmar Senha</label>
+                    <input type="password" id="password" placeholder="Confirmar nova senha">
+                </div>
+            </form>
+        </aside>
+
+    </dialog>
 
 </body>
 
