@@ -5,6 +5,7 @@
 
 body {
     background-color: #E3D6C8;
+    background-size: cover;
 } 
 
 
@@ -13,19 +14,23 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #B8A28B;
-    height: 20vh;
+    background-color: #8E7253;
+    height: 10vh;
 }
 
 .logo-readery {
     height: 70px;
 }
+
 .login {
     text-decoration: none; /* Remove o sublinhado */
     font-size: 16px; /* Tamanho da fonte */
     color: #ffff; /* Cor do texto */
     font-weight: bold; /* Deixa o texto em negrito */
     font-family: 'Merriweather', serif;
+    margin-right: 5vh;
+    background-color: #B8A28B;
+    padding: 2vh;
 }
 
 .Inicio {
@@ -47,6 +52,7 @@ header {
     height: 100%;
     align-items: normal;
 }
+
 /*Aumentar espaçamento */
 .Destaques-da-semana {
     font-size: 50px;
@@ -65,46 +71,23 @@ header {
     transform: scale(1.2); /* Aumenta o tamanho da imagem em 20% */
 }
 
-/* .Pesquisa-genero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 20px;
-    height: 100px;
-    background: none;
-} */
-
-/* .texto-pesquise {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 50px;
-    font-weight: 300px;
-} */
-
-/* .Pesquisa-botao {
-    margin: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 80px;
-    background-color: #B8A28B;
-    color: black;
-    padding: 12px 26px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: transform .15s ease;
-} */
-
 /* faz a section ocupar o espaço restante */
 .Pesquisa-genero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     height: 50%; /* Aumenta a altura para 120% da altura da tela */
     padding: 5%;
+    font-size: 2vw;
+}
+
+.botao-pesquisa {
+    background-color: #B8A28B;
+    height: 6vh;
+    width: 20vw;
+    border-radius: 10px;
+    font-size: 2vw;
 }
 
 .carrossel-livros {
@@ -112,6 +95,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 3vh;
 }
 
 .carrossel-livros img {
@@ -126,13 +110,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-image: url("Rectangle 143.png");
-    height: 100%;
+    background-image: url(../Rectangle\ 143.png);
+    height: 50vh;
 }
 
 .texto-cringe {
-    text-shadow: #594747 0.1em 0.1em 0.2em;
-    font-size: 30px;
+    font-size: 5vh;
+    background-color: #594747;
+    padding: 1vh;
+    border-radius: 10px;
+    border: 5px solid transparent rgba(0, 0, 0, 10);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 10);
+    color: rgba(0, 0, 0, 1);
+    opacity: 0.8;
 }
 
 .logo-footer {
@@ -141,7 +131,7 @@ header {
 
 
 .paralax {
-    background-image: url(../background2.png);
+    background-image: url(../background.png);
     background-repeat: no-repeat;
     /* background-position: top bottom; */
     background-size: cover;
@@ -154,10 +144,20 @@ header {
 } 
 
 footer {
-    background-color: #B8A28B;
+    background-color: #8E7253;
     display: flex; /*coloca na mesma linha*/
     align-items: center;
-    justify-content:space-around;
+    height: 12vh;
+}
+
+.logo-footer {
+    height: 10vh;
+    margin-left: 12%;
+}
+
+.texto-footer {
+    margin-left: 30%;
+    color: white;
 }
 
 @media (min-width: 768px) {
