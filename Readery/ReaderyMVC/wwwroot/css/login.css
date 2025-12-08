@@ -16,8 +16,7 @@
     padding: 0;
 }
 
-html
-{
+html {
     scroll-behavior: smooth;
 }
 
@@ -111,7 +110,7 @@ body {
     accent-color: var(--marrom-escuro);
 }
 
-.botoes { 
+.botoes {
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -146,7 +145,8 @@ body {
     width: 70%;
 }
 
-.botao-entrar:hover, .botao-cadastro:hover {
+.botao-entrar:hover,
+.botao-cadastro:hover {
     background-color: var(--marrom-claro);
     color: var(--marrom-escuro);
     border: 2px solid var(--marrom-escuro);
@@ -157,35 +157,51 @@ body {
     font-weight: 600;
     text-align: center;
     margin-top: 20px;
-    display: none; 
+    display: none;
 }
 
-.erro-login.mostrar { 
-    display: block; 
+.erro-login.mostrar {
+    display: block;
 }
 
 /*RESPONSIVIDADE - MEDIA QUERY*/
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .container-login {
         background-position: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .forms {
+        width: 100%;
     }
 
     .forms input {
-        width: 200%;
-        height: 200%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .forms input::placeholder {
+        font-size: 1rem;
     }
 
     .borda {
-        width: 80%;
+        width: 90%;
+        padding: 50px 50px;
     }
 
     .link-esqueci {
-        margin-left: 25%;
+        margin-left: 50%;
         font-size: 0.7rem;
     }
 
-    .botao-entrar, .botao-cadastro {
+    .botao-entrar,
+    .botao-cadastro {
         font-size: 1rem;
     }
 }
