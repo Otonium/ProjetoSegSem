@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/modal-perfil.css">
     <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/modal-perfil.js"></script>
     <title>Readery</title>
 </head>
 
@@ -16,7 +18,42 @@
             <img src="assets/img/icone.svg" alt="" class="logo">
             <p class="titulo-icone">Readery</p>
         </div>
-        <a href="" class="link-perfil">Perfil</a>
+        <!-------------------------------- MODAL PERFIL -------------------------------->
+        <button id="abrir-modal">Perfil</button>
+        <dialog id="modal-perfil" class="modal-perfil">
+
+            <div class="titulo-perfil">
+                <H1>Perfil</H1>
+            </div>
+
+            <div class="laterais-perfil">
+                <div class="esquerda-perfil">
+                    <img id="foto-usuario" src="assets/icon/Inserir-Foto.png" alt="Campo para inserir a foto de perfil">
+                    <button id="enviar-foto-usuario" type="submit">Efetuar upload</button>
+                </div>
+
+                <div class="direita-perfil">
+                    <form class="form-edicao-perfil">
+                        <div class="formulario">
+                            <label for="name" name="AlterarNomeUser">Nome</label>
+                            <input type="name" id="name" placeholder="Seu nome de usuário">
+
+                            <label for="password" name="NovaSenha">Senha</label>
+                            <input type="password" id="password" placeholder="Sua nova senha">
+
+                            <label for="password" name="ConfirmarNovaSenha">Confirmar Senha</label>
+                            <input type="password" id="password" placeholder="Confirmar nova senha">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="rodape-perfil">
+                <button type="submit">Salvar mudanças</button>
+
+                <button id="fechar-modal" class="centro" type="submit">Cancelar</button>
+            </div>
+        </dialog>
+        <!-------------------------------- FIM MODAL PERFIL -------------------------------->
     </header>
 
     <main>
@@ -168,45 +205,6 @@
         </section>
         <img src="assets/img/divinacomedia.png" alt="" class="img-card2">
     </main>
-
-
-    <!-------------------------------- MODAL PERFIL -------------------------------->
-    <dialog id="modal-perfil" class="modal-perfil">
-        <aside>
-            <div class="foto-usuario">
-                <img src="assets/icon/Inserir-Foto.png" alt="Campo para inserir a foto de perfil">
-            </div>
-            <div class="botao-upload">
-                <button type="submit">Efetuar upload</button>
-            </div>
-        </aside>
-
-        <main>
-            <div class="titulo">
-                <H1>Perfil</H1>
-            </div>
-            <div class="salvar-mudancas">
-                <button type="submit">Salvar mudanças</button>
-            </div>
-            <button id="fechar-modal" type="submit">Cancelar</button>
-        </main>
-
-        <aside>
-            <form class="form-edicao-perfil">
-                <div class="formulario">
-                    <label for="name" name="AlterarNomeUser">Nome</label>
-                    <input type="name" id="name" placeholder="Seu nome de usuário">
-
-                    <label for="password" name="NovaSenha">Senha</label>
-                    <input type="password" id="password" placeholder="Sua nova senha">
-
-                    <label for="password" name="ConfirmarNovaSenha">Confirmar Senha</label>
-                    <input type="password" id="password" placeholder="Confirmar nova senha">
-                </div>
-            </form>
-        </aside>
-
-    </dialog>
 
 </body>
 
