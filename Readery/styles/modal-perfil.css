@@ -3,7 +3,7 @@ dialog::backdrop {
     /* Fundo semitransparente */
 }
 
-dialog.modal-perfil {
+.modal-perfil {
     /* Centralizacao do dialog na tela */
     position: absolute;
     top: 50%;
@@ -11,22 +11,34 @@ dialog.modal-perfil {
     transform: translate(-50%, -50%);
 
     height: 70vh;
-    width: 70vw;
+    width: 60vw;
     padding: 20px;
     display: flex;
     flex-direction: column;
 
     border: none;
+    /* Desabilita barra de rolagem */
     overflow: hidden;
-    /* Previne barras de rolagem indesejadas */
 }
+
+/* TITULO */
 
 .titulo-perfil {
     text-align: center;
     width: 100%;
-    margin-bottom: 20px;
     margin-top: 10px;
+    font-family: "Roboto";
+    font-size: smaller;
+    font-weight: 400;
 }
+
+#titulo-perfil {
+    background-color: var(--marrom-claro);
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+/* RODAPE */
 
 .rodape-perfil {
     margin-top: auto;
@@ -39,13 +51,15 @@ dialog.modal-perfil {
     padding-top: 15px;
 }
 
+/* POSICIONAMENTO LATERAL */
+
 .laterais-perfil {
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 15%;
+    padding: 0 8%;
 }
 
 .esquerda-perfil,
@@ -55,8 +69,72 @@ dialog.modal-perfil {
     align-items: center;
 }
 
+/* LATERAL ESQUERDA */
+
+.esquerda-perfil {
+    max-width: 30vh;
+    max-height: 40vw;
+}
+
+.container-foto {
+    background-color: aqua;
+    width: 10vh;
+    height: 10vw;
+}
+
+#foto-usuario {
+    max-width: 12vh;
+    max-height: 15vw;
+}
+
+/* LATERAL DIREITA */
+
 .formulario {
     display: flex;
     flex-direction: column;
     align-items: left;
+}
+
+.campo-modal {
+    font-family: "Roboto";
+    font-size: large;
+    font-weight: 400;
+}
+
+label.campo-modal+input {
+    font-family: "Roboto";
+    font-size: small;
+    padding: 2px 4px;
+    margin-bottom: 10px;
+    background-color: var(--branco);
+    border-color: var(--marrom-escuro);
+    border-radius: 5px;
+}
+
+/* BOTOES */
+
+#enviar-foto-usuario {
+    cursor: pointer;
+    background-color: var(--marrom-claro);
+    border-color: var(--marrom-escuro);
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+#salvar-mudancas {
+    cursor: pointer;
+    background-color: var(--marrom-claro);
+    border-radius: 5px;
+    border: 2px solid var(--marrom-escuro);
+    padding: 5px 0px;
+    width: 10vw;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#fechar-modal {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    text-decoration: underline;
 }
