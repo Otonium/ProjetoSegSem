@@ -27,6 +27,8 @@
             <H1 id="titulo-perfil">Perfil</H1>
         </div>
 
+        <button id="fechar-modal">X</button>
+
         <div class="laterais-perfil">
             <div class="esquerda-perfil">
                 <div class="container-foto">
@@ -38,17 +40,19 @@
             <div class="direita-perfil">
                 <form class="form-edicao-perfil">
                     <div class="formulario">
-                        <label for="name" class="campo-modal" name="AlterarNomeUser">Nome</label>
-                        <input type="name" id="name" placeholder="Seu nome de usuário">
+                        <label for="name" class="titulo-input" name="AlterarNomeUser">Nome</label>
+                        <input type="name" class="campo-input" placeholder="Seu nome de usuário">
 
-                        <label for="password" class="campo-modal" name="NovaSenha">Trocar Senha</label>
-                        <input type="password" id="password" placeholder="Sua nova senha">
+                        <label class="titulo-input">Gênero</label>
+                        <select class="campo-input">
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Outro</option>
+                        </select>
 
-                        <label for="password" class="campo-modal" name="ConfirmarNovaSenha">Confirmar Senha</label>
-                        <input type="password" id="password" placeholder="Confirmar nova senha">
-
-                        <label for="password" class="campo-modal" name="SenhaAntiga">Senha Antiga</label>
-                        <input type="password" id="password" placeholder="Sua senha anterior">
+                        <label class="titulo-input">Descrição</label>
+                        <textarea class="campo-input" id="campo-descricao"
+                            placeholder="Uma breve descrição sobre você"></textarea>
                     </div>
                 </form>
             </div>
@@ -56,7 +60,7 @@
         <div class="rodape-perfil">
             <button type="submit" id="salvar-mudancas">Salvar mudanças</button>
 
-            <button id="fechar-modal">Cancelar</button>
+            <button id="fechar-modal2">Cancelar</button>
         </div>
     </dialog>
     <!-------------------------------- FIM MODAL PERFIL -------------------------------->

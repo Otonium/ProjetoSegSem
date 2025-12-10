@@ -19,6 +19,11 @@ dialog::backdrop {
     border: none;
     /* Desabilita barra de rolagem */
     overflow: hidden;
+
+    background-image: url("../assets/icons/background-perfil-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* TITULO */
@@ -27,15 +32,16 @@ dialog::backdrop {
     text-align: center;
     width: 100%;
     margin-top: 10px;
-    font-family: "Roboto";
-    font-size: smaller;
-    font-weight: 400;
 }
 
 #titulo-perfil {
     background-color: var(--marrom-claro);
     display: inline-block;
     padding: 5px 15px;
+
+    font-family: "Roboto";
+    font-size: larger;
+    font-weight: 400;
 }
 
 /* RODAPE */
@@ -59,7 +65,7 @@ dialog::backdrop {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 8%;
+    padding: 0 16%;
 }
 
 .esquerda-perfil,
@@ -72,19 +78,24 @@ dialog::backdrop {
 /* LATERAL ESQUERDA */
 
 .esquerda-perfil {
-    max-width: 30vh;
-    max-height: 40vw;
+    max-width: 22vh;
+    max-height: 30vw;
 }
 
 .container-foto {
-    background-color: aqua;
-    width: 10vh;
-    height: 10vw;
+    background-color: var(--branco);
+    height: 36vh;
+    width: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8%;
 }
 
 #foto-usuario {
-    max-width: 12vh;
-    max-height: 15vw;
+    max-width: 18vh;
+    max-height: 24vw;
+    margin-bottom: 8%;
 }
 
 /* LATERAL DIREITA */
@@ -95,13 +106,14 @@ dialog::backdrop {
     align-items: left;
 }
 
-.campo-modal {
+.titulo-input {
     font-family: "Roboto";
     font-size: large;
     font-weight: 400;
+    margin: 0px 0px 2px 0px;
 }
 
-label.campo-modal+input {
+.campo-input {
     font-family: "Roboto";
     font-size: small;
     padding: 2px 4px;
@@ -109,6 +121,11 @@ label.campo-modal+input {
     background-color: var(--branco);
     border-color: var(--marrom-escuro);
     border-radius: 5px;
+}
+
+#campo-descricao {
+    height: 20vh;
+    width: 15vw;
 }
 
 /* BOTOES */
@@ -133,8 +150,25 @@ label.campo-modal+input {
 }
 
 #fechar-modal {
+    position: absolute;
+    top: 3%;
+    left: 97%;
+    transform: translate(-97%, -3%);
+
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+    color: var(--marrom-muito-escuro);
+    transition: 0.2s;
+}
+
+#fechar-modal2 {
     cursor: pointer;
     border: none;
     font-weight: bold;
     text-decoration: underline;
+    background: none;
 }
