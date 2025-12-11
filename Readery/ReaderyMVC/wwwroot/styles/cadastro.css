@@ -105,6 +105,69 @@ input {
     font-size: 20px;
 }
 
+.btn-carregamento{
+    z-index: 100;
+    width: 5vw;
+    height: 5vh;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    transition: all 0.25s ease;
+    opacity: 1;
+}
+
+.btn-carregamento:after{
+    content: '';
+    width: 5vw;
+    height: 5vh;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-left: 3px solid #ffffff;
+    animation: loading infinite 0.8 ease 0.05s;
+    position: absolute;
+}
+
+.btn-carregamento:before{
+    content: '';
+    width: 5vw;
+    height: 5vh;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-left: 3px solid #ffffff;
+    animation: loading infinite 0.8 linear;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.btn-carregamento.loading{
+    width: 5vw;
+}
+
+.btn-carregamento.loading i{
+    transform: rotate(-90deg);
+    padding-bottom: 4px;
+    padding-left: 3px;
+}
+
+.btn-carregamento .text{
+    transform: translate(-140px);
+}
+
+.btn-carregamento .loading-animate{
+    opacity: 1;
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .cadastro:hover{
     background-color: #BDAA95;
 }
@@ -227,6 +290,7 @@ input {
         width: 80vw;
         height: 7vh;
         font-size: 30px;
+        border-radius: 50px;
     }
 
     .requerimento-senha {

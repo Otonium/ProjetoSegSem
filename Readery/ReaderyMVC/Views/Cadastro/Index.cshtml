@@ -41,7 +41,7 @@
                     <input type="text" name="nome" placeholder="  Seu nome">
 
                     <label for="email-usuario">E-mail:</label>
-                    <input type="email" name="email" placeholder="  email@gmail.com">
+                    <input type="email" id="email" name="email" placeholder="  email@gmail.com">
 
                     <label for="senha">Senha:</label>
                     <input type="password" name="senha" placeholder="  senha">
@@ -52,7 +52,10 @@
                         <p class="Falha">@ViewBag.Erro</p>
                     }
 
-                    <button class="cadastro" type="submit">Cadastrar</button>
+                    <button class="cadastro" type="submit">
+                        <span>Cadastrar</span>
+                        <span class="btn-carregamento"></span>
+                    </button>
                     <div class="linha-separativa">
                         <span class="linha-decorativa"></span>
                         Ou

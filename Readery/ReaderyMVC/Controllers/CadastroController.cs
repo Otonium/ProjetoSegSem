@@ -28,6 +28,14 @@ namespace ReaderyMVC.Controllers
                 return View("Index");
             }
 
+            var emailUsuario = _context.Usuarios.FirstOrDefault(e => email == e.Email);
+
+            if(emailUsuario == null)
+            {
+                ViewBag.Erro = "Email inexistente";
+                return View("Index");
+            }
+
             if(senha.Length < 8)
             {
                 ViewBag.Erro = "A senha deve conter pelo menos 8 caracteres";
