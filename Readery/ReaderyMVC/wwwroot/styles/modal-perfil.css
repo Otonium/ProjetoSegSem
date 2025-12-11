@@ -1,0 +1,192 @@
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo semitransparente */
+}
+
+.modal-perfil {
+    /* Centralizacao do dialog na tela */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 70vh;
+    width: 60vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    border: none;
+    /* Desabilita barra de rolagem */
+    overflow: hidden;
+
+    background-image: url("../assets/img/background-perfil.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* TITULO */
+
+.titulo-perfil {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#titulo-perfil {
+    background-color: var(--marrom-claro);
+    display: inline-block;
+    padding: 5px 15px;
+
+    font-family: "Roboto";
+    font-size: larger;
+    font-weight: 400;
+}
+
+/* RODAPE */
+
+.rodape-perfil {
+    margin-top: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+/* POSICIONAMENTO LATERAL */
+
+.laterais-perfil {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 16%;
+}
+
+.esquerda-perfil,
+.direita-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* LATERAL ESQUERDA */
+
+.esquerda-perfil {
+    max-width: 22vh;
+    max-height: 30vw;
+}
+
+.container-foto {
+    background-color: var(--branco);
+    height: 36vh;
+    width: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+
+#foto-usuario {
+    max-width: 60vh;
+    max-height: 80vw;
+    margin-bottom: 5%;
+}
+
+/* LATERAL DIREITA */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.titulo-input {
+    font-family: "Roboto";
+    font-size: large;
+    font-weight: 400;
+    margin: 0px 0px 2px 0px;
+}
+
+.campo-input {
+    font-family: "Roboto";
+    font-size: 15px;
+    padding: 2px 4px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    border: 4px solid #B8A28B;
+    padding: 2px;
+    background-color: #E3D6C8;
+    align-items: center;
+}
+
+#campo-descricao {
+    height: 20vh;
+    width: 15vw;
+    border-radius: 15px;
+    border: 4px solid #B8A28B;
+    padding: 2px;
+    background-color: #E3D6C8;
+    font-size: 15px;
+    align-items: center;
+}
+
+/* BOTOES */
+
+#enviar-foto-usuario {
+    cursor: pointer;
+    background-color: var(--marrom-claro);
+    border-color: var(--marrom-escuro);
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+#enviar-foto-usuario:hover {
+    background-color: var(--marrom-escuro);
+    transition: background-color 0.2s ease;
+}
+
+#salvar-mudancas {
+    cursor: pointer;
+    background-color: var(--marrom-claro);
+    border-radius: 5px;
+    border: 2px solid var(--marrom-escuro);
+    padding: 5px 0px;
+    width: 10vw;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#salvar-mudancas:hover {
+    background-color: var(--marrom-escuro);
+    transition: background-color 0.2s ease;
+}
+
+#fechar-modal {
+    position: absolute;
+    top: 3%;
+    left: 97%;
+    transform: translate(-97%, -3%);
+
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+
+    color: var(--marrom-muito-escuro);
+    transition: 0.2s;
+}
+
+#fechar-modal2 {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    text-decoration: underline;
+    background: none;
+}
