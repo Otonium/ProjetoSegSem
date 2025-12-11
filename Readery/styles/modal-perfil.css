@@ -190,3 +190,12 @@ dialog::backdrop {
     text-decoration: underline;
     background: none;
 }
+
+@media(max-width: 650) and (max-height: 800) {
+
+    .imagem-perfill{
+        height: 10vh;
+        width: 10vw;
+    }
+
+}
