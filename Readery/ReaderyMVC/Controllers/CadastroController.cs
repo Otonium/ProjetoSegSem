@@ -22,7 +22,7 @@ namespace ReaderyMVC.Controllers
         [HttpPost]
         public IActionResult Criar(string nome, string email, string senha)
         {
-            if(string.IsNullOrWhiteSpace(senha) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(nome))
+            if (string.IsNullOrWhiteSpace(senha) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(nome))
             {
                 ViewBag.Erro = "Preencha todos os campos";
                 return View("Index");
@@ -30,13 +30,13 @@ namespace ReaderyMVC.Controllers
 
             var emailUsuario = _context.Usuarios.FirstOrDefault(e => email == e.Email);
 
-            if(emailUsuario == null)
+            if (emailUsuario == null)
             {
                 ViewBag.Erro = "Email inexistente";
                 return View("Index");
             }
 
-            if(senha.Length < 8)
+            if (senha.Length < 8)
             {
                 ViewBag.Erro = "A senha deve conter pelo menos 8 caracteres";
                 return View("Index");
@@ -52,19 +52,28 @@ namespace ReaderyMVC.Controllers
             var data = DateTime.Now;
             //data.AddHours(-3);
 
-             Usuario usuario = new Usuario
-             {
+            Usuario usuario = new Usuario
+            {
                 Nome = nome,
                 Email = email,
                 SenhaHash = hash,
                 FotoURL = null,
                 DataCadastro = data
-             };
+            };
 
-             _context.Usuarios.Add(usuario);
-             _context.SaveChanges();
+            _context.Usuarios.Add(usuario);
+            _context.SaveChanges();
 
-             return RedirectToAction("Index", "Home");
+            EmailService emailService = new EmailService(email);
+
+            var user = _context.Usuarios.FirstOrDefault(u => u.Email == email);
+            if (user == null)
+            {
+                return View("Index");
+            }
+            emailService.EnviarEmail();
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }
