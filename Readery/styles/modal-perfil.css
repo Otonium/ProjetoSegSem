@@ -16,14 +16,43 @@ dialog::backdrop {
     display: flex;
     flex-direction: column;
 
+    visibility: hidden;
+    opacity: 0;        /* Para transição suave */
+
     border: none;
     /* Desabilita barra de rolagem */
     overflow: hidden;
 
-    background-image: url("../assets/icons/background-perfil-desktop.svg");
+    background-image: url("../assets/img/bkgModal.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 1000;
+    position: fixed;
+}
+
+.modal-perfil.ativo{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* OVERLAY */
+
+.modal-overlay {
+    /* Ocupa todo o espaço do contêiner principal */
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+
+    visibility: hidden;
+    
+    /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-overlay.ativo{
+    visibility: visible;
 }
 
 /* TITULO */
@@ -93,8 +122,8 @@ dialog::backdrop {
 }
 
 #foto-usuario {
-    max-width: 60vh;
-    max-height: 80vw;
+    width: 30vw;
+    height: 40vh;
     margin-bottom: 5%;
 }
 
@@ -191,11 +220,34 @@ dialog::backdrop {
     background: none;
 }
 
-@media(max-width: 650) and (max-height: 800) {
+@media(max-width: 650px) and (max-height: 800px) {
 
-    .imagem-perfill{
+    #imagem-perfil{
         height: 10vh;
         width: 10vw;
     }
 
+    .container-foto{
+        height: 30vh;
+        width: 20vw;
+    }
+
+    .campo-input{
+        width: 20vw;
+    }
+
+    .laterais-perfil{
+        padding: 0 5%;
+    }
+
+    #campo-descricao{
+        width: 20vw;
+    }
+
+    #salvar-mudancas{
+        width: 20vw;
+    }
+    #modal-perfil{
+    background-image: url("../assets/img/bkgModalMobile.png");
+    }
 }
