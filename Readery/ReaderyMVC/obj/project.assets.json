@@ -7856,11 +7856,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47644245847\\Desktop\\modal-perfil\\ProjetoSegSem\\Readery\\ReaderyMVC\\ReaderyMVC.csproj",
+      "projectUniqueName": "C:\\Users\\47644245847\\Desktop\\ProjetoSegSem\\Readery\\ReaderyMVC\\ReaderyMVC.csproj",
       "projectName": "ReaderyMVC",
-      "projectPath": "C:\\Users\\47644245847\\Desktop\\modal-perfil\\ProjetoSegSem\\Readery\\ReaderyMVC\\ReaderyMVC.csproj",
+      "projectPath": "C:\\Users\\47644245847\\Desktop\\ProjetoSegSem\\Readery\\ReaderyMVC\\ReaderyMVC.csproj",
       "packagesPath": "C:\\Users\\47644245847\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47644245847\\Desktop\\modal-perfil\\ProjetoSegSem\\Readery\\ReaderyMVC\\obj\\",
+      "outputPath": "C:\\Users\\47644245847\\Desktop\\ProjetoSegSem\\Readery\\ReaderyMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\47644245847\\AppData\\Roaming\\NuGet\\NuGet.Config"
