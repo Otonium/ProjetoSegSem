@@ -1,9 +1,12 @@
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Mvc;
-using ReaderyMVC.Data;
-using ReaderyMVC.Models;
-using ReaderyMVC.Services;
+using teste_mvc.Data;
+using teste_mvc.Models;
+using teste_mvc.Services;
 
-namespace ReaderyMVC.Controllers
+namespace teste_mvc.Controllers
 {
     public class CadastroController : Controller
     {
@@ -20,20 +23,11 @@ namespace ReaderyMVC.Controllers
         }
 
         [HttpPost]
-        //* Cadastro do Usuario
         public IActionResult Criar(string nome, string email, string senha)
         {
             if (string.IsNullOrWhiteSpace(senha) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(nome))
             {
                 ViewBag.Erro = "Preencha todos os campos";
-                return View("Index");
-            }
-
-            var emailUsuario = _context.Usuarios.FirstOrDefault(e => email == e.Email);
-
-            if (emailUsuario == null)
-            {
-                ViewBag.Erro = "Email inexistente";
                 return View("Index");
             }
 
@@ -43,12 +37,15 @@ namespace ReaderyMVC.Controllers
                 return View("Index");
             }
 
-            //*Criacao de uma senha Hash para mandar ao banco
+            Console.WriteLine(senha);
+            Console.WriteLine(email);
+            Console.WriteLine(nome);
+
             byte[] hash = HashService.GerarHashBytes(senha);
+            Console.WriteLine(hash);
 
             var data = DateTime.Now;
-            //? -3 por conta do fuso horário da nuvem
-            data.AddHours(-3);
+            //data.AddHours(-3);
 
             Usuario usuario = new Usuario
             {
@@ -62,22 +59,48 @@ namespace ReaderyMVC.Controllers
             _context.Usuarios.Add(usuario);
             _context.SaveChanges();
 
-            //* Envio do email
             EmailService emailService = new EmailService(email);
 
             var user = _context.Usuarios.FirstOrDefault(u => u.Email == email);
-            if (user == null)
+            if(user == null)
             {
                 return View("Index");
             }
             emailService.EnviarEmail();
-
+        
             return RedirectToAction("Index", "Home");
         }
 
-        public IActionResult Voltar()
+
+
+
+
+        public IActionResult LoginGoogle()
         {
-            return RedirectToAction("Index", "Home");
+            var propriedades = new AuthenticationProperties
+            {
+                RedirectUri = Url.Action("GoogleCallback")
+            };
+
+            return Challenge(propriedades, GoogleDefaults.AuthenticationScheme);
+        }
+
+        public async Task<IActionResult> GoogleCallback()
+        {
+            var resultado = await HttpContext.AuthenticateAsync(GoogleDefaults.AuthenticationScheme);
+
+            if(!resultado.Succeeded)
+            {
+                return RedirectToAction("Index");
+            }
+
+            var claims = resultado.Principal.Identities.First().Claims.ToList();
+
+            string email = claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+            string nome = claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value ?? "Usuario Google";
+
+            if(email == null)
+            return RedirectToA
         }
     }
 }
