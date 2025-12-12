@@ -100,7 +100,40 @@ namespace teste_mvc.Controllers
             string nome = claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value ?? "Usuario Google";
 
             if(email == null)
-            return RedirectToA
+            return RedirectToAction("Index");
+
+            var usuario = _context.Usuario.FirstOrDefault(u => u.Email == email);
+
+            if(usuario == null)
+            {
+                usuario = new Usuario
+                {
+                    Email = email,
+                    Nome = nome,
+                    SenhaHash = ""
+                }
+
+                _context.Usuarios.Add(usuario);
+                _context.SaveChanges();
+            }
+
+            var identity = new ClaimsIdentity(resultado.Principal.identity, resultado.Principal.Claims);
+
+            await HttpContext.SignInAsync(
+                CookieAuthentificationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(identity)
+            );
+
+            HttpContext.Session.SetString("Nome", usuario.Nome);
+            HttpContext.Session.SetInt32("UsuarioId", usuario.UsuarioId);
+
+            return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult Sair()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index");
         }
     }
 }
