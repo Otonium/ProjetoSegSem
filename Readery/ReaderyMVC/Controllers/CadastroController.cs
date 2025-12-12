@@ -1,12 +1,14 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Mvc;
-using teste_mvc.Data;
-using teste_mvc.Models;
-using teste_mvc.Services;
+using ReaderyMVC.Data;
+using ReaderyMVC.Data;
+using ReaderyMVC.Models;
+using ReaderyMVC.Services;
 
-namespace teste_mvc.Controllers
+namespace ReaderyMVC.Controllers
 {
     public class CadastroController : Controller
     {
@@ -37,12 +39,8 @@ namespace teste_mvc.Controllers
                 return View("Index");
             }
 
-            Console.WriteLine(senha);
-            Console.WriteLine(email);
-            Console.WriteLine(nome);
-
-            byte[] hash = HashService.GerarHashBytes(senha);
-            Console.WriteLine(hash);
+            byte[] senhaBytes = HashService.GerarHashBytes(senha);
+            string senhaHash = Convert.ToBase64String(senhaBytes);
 
             var data = DateTime.Now;
             //data.AddHours(-3);
@@ -51,7 +49,7 @@ namespace teste_mvc.Controllers
             {
                 Nome = nome,
                 Email = email,
-                SenhaHash = hash,
+                SenhaHash = senhaHash,
                 FotoURL = null,
                 DataCadastro = data
             };
@@ -82,11 +80,13 @@ namespace teste_mvc.Controllers
                 RedirectUri = Url.Action("GoogleCallback")
             };
 
+            //* Abre a tela do login do Google
             return Challenge(propriedades, GoogleDefaults.AuthenticationScheme);
         }
 
         public async Task<IActionResult> GoogleCallback()
         {
+            //* Pega as Autentificacoes do Google
             var resultado = await HttpContext.AuthenticateAsync(GoogleDefaults.AuthenticationScheme);
 
             if(!resultado.Succeeded)
@@ -94,6 +94,7 @@ namespace teste_mvc.Controllers
                 return RedirectToAction("Index");
             }
 
+            //* Sao os valores pega do Google
             var claims = resultado.Principal.Identities.First().Claims.ToList();
 
             string email = claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
@@ -102,30 +103,28 @@ namespace teste_mvc.Controllers
             if(email == null)
             return RedirectToAction("Index");
 
-            var usuario = _context.Usuario.FirstOrDefault(u => u.Email == email);
-
-            if(usuario == null)
-            {
-                usuario = new Usuario
+            
+            var usuario = new Usuario
                 {
                     Email = email,
                     Nome = nome,
                     SenhaHash = ""
-                }
+                };
 
                 _context.Usuarios.Add(usuario);
                 _context.SaveChanges();
-            }
 
-            var identity = new ClaimsIdentity(resultado.Principal.identity, resultado.Principal.Claims);
+            //* Vai pegar os valores das Claims vinda da google
+            var identity = new ClaimsIdentity(resultado.Principal.Identity, resultado.Principal.Claims);
 
             await HttpContext.SignInAsync(
-                CookieAuthentificationDefaults.AuthenticationScheme,
+                CookieAuthenticationDefaults.AuthenticationScheme,
                 new ClaimsPrincipal(identity)
             );
 
+            //* Vai armazenar a sessao usado no site
             HttpContext.Session.SetString("Nome", usuario.Nome);
-            HttpContext.Session.SetInt32("UsuarioId", usuario.UsuarioId);
+            HttpContext.Session.SetInt32("UsuarioId", usuario.IdUsuario);
 
             return RedirectToAction("Index", "Home");
         }
