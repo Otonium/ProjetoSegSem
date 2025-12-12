@@ -3,8 +3,18 @@
     font-family: "Noto Sans", sans-serif;
 }
 
+:root {
+    --marrom-claro: #E3D6C8;
+    --marrom: #B8A28B;
+    --marrom-houver: #d3b99e;
+    --marrom-escuro: #8E7253;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --vermelho: #ff0000; 
+}
+
 .logo {
-    width: 20vw;
+    width: 17vw;
     height: auto;
     margin-top: 10px;
     margin-left: 10px; 
@@ -18,7 +28,7 @@
     background-size: cover;
     background-size: 100% 100%;
     margin: 0;
-    height: 105vh;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -30,9 +40,9 @@
 }
 
 .lado-esquerdo {
-    color: white;
+    color: var(--branco);
     margin-left: 3%;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 .titulo-esquerdo {
@@ -47,12 +57,11 @@
 }
 
 .lado-direito {
-    color: black;
+    color: var(--preto);
     margin-right: 0px;
 }
 
 .titulo-direito {
-    margin-top: 0px;
     font-size: 30px;
 }
 
@@ -69,28 +78,28 @@
 }
 
 .Falha{
-    color: red;
+    color: var(--vermelho);
     align-items: center;
     font-size: 90%;
     margin-left: 15%;
 }
 
 input {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 10px;
     width: 35vw;
-    height: 7vh;
+    height: 5vh;
     padding-left: 4vw;
-    border-radius: 50px;
-    border: 4px solid #B8A28B;
+    border-radius: 15px;
+    border: 4px solid var(--marrom);
     padding: 0px;
-    background-color: #E3D6C8;
+    background-color: var(--marrom-claro);
     font-size: 15px;
     align-items: center;
 }
 
 .requerimento-senha {
-    color: #BDAA95;
+    color: var(--marrom);
     margin-top: 2px;
     font-size: 20px;
 }
@@ -99,77 +108,14 @@ input {
     margin-top: 8px;
     height: 7vh;
     width: 35vw;
-    background-color: #B8A28B;
-    border-radius: 50px;
+    background-color: var(--marrom);
+    border-radius: 15px;
     border: 0px;
     font-size: 20px;
 }
 
-.btn-carregamento{
-    z-index: 100;
-    width: 5vw;
-    height: 5vh;
-    border-radius: 50%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    pointer-events: none;
-    transition: all 0.25s ease;
-    opacity: 1;
-}
-
-.btn-carregamento:after{
-    content: '';
-    width: 5vw;
-    height: 5vh;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-left: 3px solid #ffffff;
-    animation: loading infinite 0.8 ease 0.05s;
-    position: absolute;
-}
-
-.btn-carregamento:before{
-    content: '';
-    width: 5vw;
-    height: 5vh;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-left: 3px solid #ffffff;
-    animation: loading infinite 0.8 linear;
-    position: absolute;
-    opacity: 0.6;
-}
-
-.btn-carregamento.loading{
-    width: 5vw;
-}
-
-.btn-carregamento.loading i{
-    transform: rotate(-90deg);
-    padding-bottom: 4px;
-    padding-left: 3px;
-}
-
-.btn-carregamento .text{
-    transform: translate(-140px);
-}
-
-.btn-carregamento .loading-animate{
-    opacity: 1;
-}
-
-@keyframes loading{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
 .cadastro:hover{
-    background-color: #BDAA95;
+    background-color: var(--marrom-houver);
 }
 
 
@@ -187,7 +133,7 @@ input {
 .linha-decorativa {
     width: 20vw;
     height: 2px;
-    background-color: black;
+    background-color: var(--preto);
     opacity: 0.5;
 }
 
@@ -196,17 +142,17 @@ input {
     justify-content: center;
     gap: 18px;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
     width: 35vw;
     font-size: 20px;
-    border: 10px solid #B8A28B;
-    border-radius: 50px;
-    background-color: #E3D6C8;
+    border: 5px solid var(--marrom);
+    border-radius: 15px;
+    background-color: var(--marrom-claro);
     margin-bottom: 0px;
 }
 
 .google:hover{
-    background-color: rgb(211, 191, 169);
+    background-color: var(--marrom);
 }
 .imagem-google {
     width: 4vh;
@@ -290,7 +236,7 @@ input {
         width: 80vw;
         height: 7vh;
         font-size: 30px;
-        border-radius: 50px;
+        border-radius: 15px;
     }
 
     .requerimento-senha {
@@ -302,7 +248,7 @@ input {
         margin-top: 8px;
         height: 7vh;
         width: 80vw;
-        border-radius: 50px;
+        border-radius: 15px;
         font-size: 30px;
     }
 

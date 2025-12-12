@@ -20,6 +20,7 @@ namespace ReaderyMVC.Controllers
         }
 
         [HttpPost]
+        //* Cadastro do Usuario
         public IActionResult Criar(string nome, string email, string senha)
         {
             if (string.IsNullOrWhiteSpace(senha) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(nome))
@@ -42,15 +43,12 @@ namespace ReaderyMVC.Controllers
                 return View("Index");
             }
 
-            Console.WriteLine(senha);
-            Console.WriteLine(email);
-            Console.WriteLine(nome);
-
+            //*Criacao de uma senha Hash para mandar ao banco
             byte[] hash = HashService.GerarHashBytes(senha);
-            Console.WriteLine(hash);
 
             var data = DateTime.Now;
-            //data.AddHours(-3);
+            //? -3 por conta do fuso horário da nuvem
+            data.AddHours(-3);
 
             Usuario usuario = new Usuario
             {
@@ -64,6 +62,7 @@ namespace ReaderyMVC.Controllers
             _context.Usuarios.Add(usuario);
             _context.SaveChanges();
 
+            //* Envio do email
             EmailService emailService = new EmailService(email);
 
             var user = _context.Usuarios.FirstOrDefault(u => u.Email == email);
@@ -73,6 +72,11 @@ namespace ReaderyMVC.Controllers
             }
             emailService.EnviarEmail();
 
+            return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult Voltar()
+        {
             return RedirectToAction("Index", "Home");
         }
     }

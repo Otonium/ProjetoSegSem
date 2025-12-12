@@ -572,5 +572,6 @@ C:\Users\46336142825\Desktop\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\r
 C:\Users\46336142825\Desktop\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\ReaderyMVC.pdb
 C:\Users\46336142825\Desktop\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\ReaderyMVC.genruntimeconfig.cache
 C:\Users\46336142825\Desktop\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\ref\ReaderyMVC.dll
-C:\Users\46336142825\Desktop\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\compressed\nn2gw3nt72-hmdrgwwfj5.gz
 C:\Users\46336142825\Desktop\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\compressed\oeiczil6sx-5ipweew5fc.gz
+C:\Users\46336142825\Desktop\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\compressed\zq7vxin53b-573i28g9o4.gz
+C:\Users\46336142825\Desktop\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\compressed\nn2gw3nt72-80lycmkh31.gz

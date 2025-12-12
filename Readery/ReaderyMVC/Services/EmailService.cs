@@ -15,6 +15,7 @@ namespace ReaderyMVC.Services
 {
     public class EmailService
     {
+        //* Pega o email do usuario
         public readonly string _emailDestino;
         public int CodigoGerado{get;private set;}
 
