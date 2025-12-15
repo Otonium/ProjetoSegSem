@@ -764,7 +764,6 @@ C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debu
 C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\compressed\wafxjo5fp8-61n19gt1b8.gz
 C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\compressed\oq9cdho2ej-yeonoq3b3r.gz
 C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\compressed\c5yl0v7k19-j3zq7r5ovq.gz
-C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\compressed\p3nmo2xfmh-sg353fs1un.gz
 C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\compressed\a0wclsex89-e3ivd7k34x.gz
 C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\staticwebassets.build.json.cache
@@ -776,4 +775,5 @@ C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debu
 C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\ReaderyMVC.pdb
 C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\ReaderyMVC.genruntimeconfig.cache
 C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\ref\ReaderyMVC.dll
-C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\compressed\psh5fwtmnq-c6cs7mjdju.gz
+C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\compressed\p3nmo2xfmh-byj7e0y1zc.gz
+C:\Users\47644245847\Desktop\AGORA VAI\ProjetoSegSem\Readery\ReaderyMVC\obj\Debug\net9.0\compressed\psh5fwtmnq-8ifu0ul9o5.gz

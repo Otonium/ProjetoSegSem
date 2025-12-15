@@ -1,7 +1,7 @@
-using System;
 using Microsoft.AspNetCore.Mvc;
 using ReaderyMVC.Data;
 using ReaderyMVC.Models;
+using System.IO; // Necessario para MemoryStream
 
 namespace ReaderyMVC.Controllers
 {
@@ -25,6 +25,7 @@ namespace ReaderyMVC.Controllers
         {
             int? usuarioId = HttpContext.Session.GetInt32("UsuarioId");
 
+            // Se nao estiver logado, retorna nulo (depende da sessao real)
             if (usuarioId == null)
             {
                 return Json(null);
@@ -41,8 +42,8 @@ namespace ReaderyMVC.Controllers
             var viewModel = new PerfilViewModel
             {
                 Nome = usuario.Nome,
-                GeneroUsuario = usuario.GeneroUsuario,
-                DescricaoUsuario = usuario.DescricaoUsuario,
+                Genero = usuario.Genero, // OK: Sincronizado com DB
+                Descricao = usuario.Descricao, // OK: Sincronizado com DB
                 FotoURL = usuario.FotoURL
             };
 
@@ -53,8 +54,10 @@ namespace ReaderyMVC.Controllers
         [HttpPost]
         public IActionResult AtualizarPerfil(PerfilViewModel model)
         {
+            // Pega o ID da sessao
             int? usuarioId = HttpContext.Session.GetInt32("UsuarioId");
 
+            // Se nao tiver ID (sem mock), manda pra tela de login
             if (usuarioId == null)
             {
                 return RedirectToAction("Index", "Login");
@@ -68,10 +71,12 @@ namespace ReaderyMVC.Controllers
                 return RedirectToAction("Index", "Login");
             }
 
+            // --- APLICACAO DAS ALTERACOES ---
             usuario.Nome = model.Nome;
-            usuario.GeneroUsuario = model.GeneroUsuario;
-            usuario.DescricaoUsuario = model.DescricaoUsuario;
+            usuario.Genero = model.Genero; // OK: Sincronizado com DB
+            usuario.Descricao = model.Descricao; // OK: Sincronizado com DB
 
+            // Logica de foto
             if (model.Foto != null && model.Foto.Length > 0)
             {
                 using (var ms = new MemoryStream())
@@ -81,6 +86,7 @@ namespace ReaderyMVC.Controllers
                 }
             }
 
+            // --- SAVE LIMPO ---
             _context.SaveChanges();
 
             TempData["Sucesso"] = "Perfil atualizado com sucesso!";

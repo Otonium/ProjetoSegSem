@@ -25,21 +25,16 @@ const URL_BASE = '/Livro';
 
 // URL base do icone default pra resetar a foto
 const FOTO_DEFAULT_URL = 'assets/icons/inserir-foto.svg';
-const formElement = document.querySelector('.form-edicao-perfil'); // Pega o form pra poder dar reset
+const formElement = document.querySelector('.form-edicao-perfil');
 
 /**
  * Reseta o formulario pra limpar qualquer alteracao nao salva 
- * (Resolvendo o bug de 'salvar' ao fechar/cancelar).
  */
 function resetarModal() {
-    // Reseta o formulario pros valores originais do GET
-    // Se o form fosse um HTML nativo, isso bastaria pra inputs de texto.
     if (formElement) {
         formElement.reset();
     }
-
     // O reset() nao limpa o preview da imagem, entao a gente tem que resetar na mao.
-    // Limpa o input file e volta a imagem pra default.
     fotoUsuarioImg.src = FOTO_DEFAULT_URL;
     inputFotoFile.value = '';
 }
@@ -57,30 +52,29 @@ botaoAbrir.addEventListener('click', () => {
 
 
 // --- Listeners de Fechamento ---
-// O segredo pra corrigir o bug de 'salvar' sem salvar e resetar TUDO
 botaoFechar.addEventListener('click', () => {
     modal.classList.remove('ativo');
     overlay.classList.remove('ativo');
-    resetarModal(); // <<< CORRIGIDO: Limpa o form ao fechar
+    resetarModal();
 });
 
 botaoFechar2.addEventListener('click', () => {
     modal.classList.remove('ativo');
     overlay.classList.remove('ativo');
-    resetarModal(); // <<< CORRIGIDO: Limpa o form ao fechar
+    resetarModal();
 });
 
 overlay.addEventListener('click', () => {
     modal.classList.remove('ativo');
     overlay.classList.remove('ativo');
-    resetarModal(); // <<< CORRIGIDO: Limpa o form ao fechar
+    resetarModal();
 });
 
 document.addEventListener('keydown', ESC => {
     if (ESC.key === 'Escape') {
         modal.classList.remove('ativo');
         overlay.classList.remove('ativo');
-        resetarModal(); // <<< CORRIGIDO: Limpa o form ao fechar
+        resetarModal();
     }
 });
 
@@ -92,37 +86,34 @@ document.addEventListener('keydown', ESC => {
 function carregarDadosPerfil() {
     fetch(`${URL_BASE}/BuscarPerfil`)
         .then(response => {
-            // Se o status nao for 200, cai no catch
             if (!response.ok) {
                 throw new Error('Falha na requisicao GET de perfil.');
             }
             return response.json();
         })
         .then(data => {
-            // Se nao tiver dados, para por aqui
             if (!data) return;
 
             // Popula os campos com os dados do banco
             nomeInput.value = data.nome || '';
-            descricaoTextarea.value = data.descricaoUsuario || '';
-            generoSelect.value = data.generoUsuario || 'Outro';
+            // OK: Corrigido para data.descricao
+            descricaoTextarea.value = data.descricao || '';
+            // OK: Corrigido para data.genero
+            generoSelect.value = data.genero || 'Outro';
 
             // Verifica e exibe a foto (Base64)
             if (data.fotoURL) {
-                // Checa se a URL e Base64 (string gigante) ou URL simples
                 if (data.fotoURL.length > 500) {
                     fotoUsuarioImg.src = `data:image/jpeg;base64,${data.fotoURL}`;
                 } else {
-                    fotoUsuarioImg.src = data.fotoURL; // Se for link/caminho simples
+                    fotoUsuarioImg.src = data.fotoURL;
                 }
             } else {
-                fotoUsuarioImg.src = FOTO_DEFAULT_URL; // Se nao tiver foto, usa o default
+                fotoUsuarioImg.src = FOTO_DEFAULT_URL;
             }
         })
         .catch(error => {
             console.error('Erro GET no perfil:', error);
-            // Avisa o user que nao deu pra carregar os dados
-            // alert('Erro ao carregar dados do perfil. Tente novamente.'); 
         });
 }
 
@@ -152,15 +143,16 @@ inputFotoFile.addEventListener('change', function (event) {
  * Rota: LivroController.AtualizarPerfil
  */
 btnSalvarMudancas.addEventListener('click', (event) => {
-    event.preventDefault(); // Bloqueia o submit padrao do form
+    event.preventDefault();
 
-    // FormData e a classe pra mandar dados de formulario, inclusive arquivos (a foto).
     const formData = new FormData();
 
     // Anexa dados de texto (Tem que bater com os 'Names' do PerfilViewModel no C#)
     formData.append('Nome', nomeInput.value);
-    formData.append('GeneroUsuario', generoSelect.value);
-    formData.append('DescricaoUsuario', descricaoTextarea.value);
+    // OK: Corrigido para 'Genero'
+    formData.append('Genero', generoSelect.value);
+    // OK: Corrigido para 'Descricao'
+    formData.append('Descricao', descricaoTextarea.value);
 
     // Anexa arquivo de foto, se tiver sido selecionado um novo
     const fotoFile = inputFotoFile.files[0];
@@ -170,11 +162,9 @@ btnSalvarMudancas.addEventListener('click', (event) => {
 
     fetch(`${URL_BASE}/AtualizarPerfil`, {
         method: 'POST',
-        body: formData // Usa FormData, entao nao precisa de headers de content-type
+        body: formData
     })
         .then(response => {
-            // CORRIGIDO: O reload so acontece se o POST for 100% OK, garantindo que os dados
-            // ja estao no banco antes de recarregar a pagina.
             if (response.ok || response.redirected) {
                 alert('Perfil atualizado com sucesso! Recarregando...');
 
@@ -182,10 +172,9 @@ btnSalvarMudancas.addEventListener('click', (event) => {
                 modal.classList.remove('ativo');
                 overlay.classList.remove('ativo');
 
-                // Recarrega a pagina. O proximo GET vai puxar os dados atualizados.
+                // Recarrega a pagina.
                 window.location.reload();
             } else {
-                // Se o C# deu erro 500 ou 400, cai aqui
                 throw new Error('Falha ao salvar. Status: ' + response.status);
             }
         })

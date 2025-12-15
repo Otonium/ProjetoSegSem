@@ -23,12 +23,12 @@ public partial class Usuario
     public string SenhaHash { get; set; } = null!;
 
     [StringLength(10)]
-    public string? GeneroUsuario { get; set; }
+    public string? Genero { get; set; }
 
     [StringLength(500)]
-    public string? DescricaoUsuario { get; set; }
+    public string? Descricao { get; set; }
 
-    [StringLength(500)]
+    [Column(TypeName = "nvarchar(MAX)")]
     public string? FotoURL { get; set; }
 
     [Precision(0)]
