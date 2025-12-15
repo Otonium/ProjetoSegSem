@@ -6,7 +6,7 @@ VALUES
 ('Editora Record'),
 ('Galera Record'),
 ('Rocco'),
-('IntrÌnseca'),
+('Intr√≠nseca'),
 ('Editora Arqueiro'),
 ('Sextante'),
 ('Aleph'),
@@ -19,84 +19,68 @@ VALUES
 ('Principis');
 
 INSERT INTO Livro (Titulo, Sinopse, ISBN, NumPaginas, CapaURL, EditoraID) VALUES 
-('Dom Casmurro', 'O romance mais famoso de Machado de Assis, narrado por Bento Santiago, que conta a histÛria de seu amor por Capitu e a d˙vida obsessiva sobre a traiÁ„o dela.', '978-857-23269-7', 300, 'https://bibliotecavirtual.com/capas/dom_casmurro.jpg', 15), 
-('Capit„es da Areia', 'A histÛria de um grupo de menores abandonados que vivem em um trapiche abandonado em Salvador, liderados pelo carism·tico Pedro Bala.', '978-853-59008-7', 368, 'https://bibliotecavirtual.com/capas/capitaes_areia.jpg', 1), 
-('Vidas Secas', 'Um retrato pungente da vida no sert„o nordestino, focado na luta da famÌlia de Fabiano para sobreviver ‡ seca e ‡ misÈria.', '978-850-81544-2', 176, 'https://bibliotecavirtual.com/capas/vidas_secas.jpg', 1), 
-('O Alquimista', 'Um jovem pastor, Santiago, viaja da Espanha ao Egito em busca de um tesouro enterrado. Uma f·bula sobre seguir a "Lenda Pessoal".', '978-852-02051-1', 208, 'https://bibliotecavirtual.com/capas/o_alquimista.jpg', 7), 
-('1984', 'Um romance distÛpico que narra a vida de Winston Smith em um regime totalit·rio onde o Grande Irm„o vigia a todos, e o pensamento individual È crime.', '978-853-59148-9', 416, 'https://bibliotecavirtual.com/capas/1984.jpg', 1), 
-('Cem Anos de Solid„o', 'A saga da famÌlia BuendÌa ao longo de sete geraÁıes na cidade fictÌcia de Macondo. Uma obra-prima do realismo m·gico.', '978-853-59106-2', 432, 'https://bibliotecavirtual.com/capas/cem_anos_solidao.jpg', 2), 
-('O Pequeno PrÌncipe', 'Uma f·bula poÈtica sobre a amizade, o amor, a perda e o sentido da vida, contada atravÈs dos olhos de um garoto de outro planeta.', '978-857-40678-9', 96, 'https://bibliotecavirtual.com/capas/pequeno_principe.jpg', 12), 
-('Orgulho e Preconceito', 'Um romance de Jane Austen que acompanha a protagonista Elizabeth Bennet e sua relaÁ„o turbulenta e cheia de mal-entendidos com o Mr. Darcy.', '978-858-07705-0', 448, 'https://bibliotecavirtual.com/capas/orgulho_preconceito.jpg', 15), 
-('Crime e Castigo', 'O estudante RaskÛlnikov comete um assassinato e lida com as consequÍncias morais e psicolÛgicas de seu ato em S„o Petersburgo.', '978-857-32651-6', 560, 'https://bibliotecavirtual.com/capas/crime_castigo.jpg', 12), 
-('As Aventuras de Sherlock Holmes', 'ColeÁ„o de contos do icÙnico detetive Sherlock Holmes e seu fiel companheiro, Dr. Watson, em busca da soluÁ„o de mistÈrios em Londres.', '978-857-82715-8', 320, 'https://bibliotecavirtual.com/capas/sherlock_holmes.jpg', 15), 
-('… Assim Que Acaba', 'Lily Bloom se muda para Boston, abre uma floricultura e se apaixona por um neurocirurgi„o, mas a sombra de seu passado e um novo amor a confrontam.', '978-850-11120-1', 368, 'https://bibliotecavirtual.com/capas/e_assim_que_acaba.jpg', 3), 
-('Verity', 'Lowen Ashleigh, uma escritora falida, È contratada para terminar a sÈrie de livros de Verity Crawford, uma autora de sucesso acidentada, e descobre um manuscrito perturbador.', '978-850-11175-3', 320, 'https://bibliotecavirtual.com/capas/verity.jpg', 3), 
+('Dom Casmurro', 'O romance mais famoso de Machado de Assis, narrado por Bento Santiago, que conta a hist√≥ria de seu amor por Capitu e a d√∫vida obsessiva sobre a trai√ß√£o dela.', '978-857-23269-7', 300, 'https://bibliotecavirtual.com/capas/dom_casmurro.jpg', 15), 
+('Capit√£es da Areia', 'A hist√≥ria de um grupo de menores abandonados que vivem em um trapiche abandonado em Salvador, liderados pelo carism√°tico Pedro Bala.', '978-853-59008-7', 368, 'https://bibliotecavirtual.com/capas/capitaes_areia.jpg', 1), 
+('Vidas Secas', 'Um retrato pungente da vida no sert√£o nordestino, focado na luta da fam√≠lia de Fabiano para sobreviver √† seca e √† mis√©ria.', '978-850-81544-2', 176, 'https://bibliotecavirtual.com/capas/vidas_secas.jpg', 1), 
+('O Alquimista', 'Um jovem pastor, Santiago, viaja da Espanha ao Egito em busca de um tesouro enterrado. Uma f√°bula sobre seguir a "Lenda Pessoal".', '978-852-02051-1', 208, 'https://bibliotecavirtual.com/capas/o_alquimista.jpg', 7), 
+('1984', 'Um romance dist√≥pico que narra a vida de Winston Smith em um regime totalit√°rio onde o Grande Irm√£o vigia a todos, e o pensamento individual √© crime.', '978-853-59148-9', 416, 'https://bibliotecavirtual.com/capas/1984.jpg', 1), 
+('Cem Anos de Solid√£o', 'A saga da fam√≠lia Buend√≠a ao longo de sete gera√ß√µes na cidade fict√≠cia de Macondo. Uma obra-prima do realismo m√°gico.', '978-853-59106-2', 432, 'https://bibliotecavirtual.com/capas/cem_anos_solidao.jpg', 2), 
+('O Pequeno Pr√≠ncipe', 'Uma f√°bula po√©tica sobre a amizade, o amor, a perda e o sentido da vida, contada atrav√©s dos olhos de um garoto de outro planeta.', '978-857-40678-9', 96, 'https://bibliotecavirtual.com/capas/pequeno_principe.jpg', 12), 
+('Orgulho e Preconceito', 'Um romance de Jane Austen que acompanha a protagonista Elizabeth Bennet e sua rela√ß√£o turbulenta e cheia de mal-entendidos com o Mr. Darcy.', '978-858-07705-0', 448, 'https://bibliotecavirtual.com/capas/orgulho_preconceito.jpg', 15), 
+('Crime e Castigo', 'O estudante Rask√≥lnikov comete um assassinato e lida com as consequ√™ncias morais e psicol√≥gicas de seu ato em S√£o Petersburgo.', '978-857-32651-6', 560, 'https://bibliotecavirtual.com/capas/crime_castigo.jpg', 12), 
+('As Aventuras de Sherlock Holmes', 'Cole√ß√£o de contos do ic√¥nico detetive Sherlock Holmes e seu fiel companheiro, Dr. Watson, em busca da solu√ß√£o de mist√©rios em Londres.', '978-857-82715-8', 320, 'https://bibliotecavirtual.com/capas/sherlock_holmes.jpg', 15), 
+('√â Assim Que Acaba', 'Lily Bloom se muda para Boston, abre uma floricultura e se apaixona por um neurocirurgi√£o, mas a sombra de seu passado e um novo amor a confrontam.', '978-850-11120-1', 368, 'https://bibliotecavirtual.com/capas/e_assim_que_acaba.jpg', 3), 
+('Verity', 'Lowen Ashleigh, uma escritora falida, √© contratada para terminar a s√©rie de livros de Verity Crawford, uma autora de sucesso acidentada, e descobre um manuscrito perturbador.', '978-850-11175-3', 320, 'https://bibliotecavirtual.com/capas/verity.jpg', 3), 
 ('A Biblioteca da Meia-Noite', 'Nora Seed tem a chance de ver como sua vida teria sido se tivesse feito escolhas diferentes, em uma biblioteca que fica entre a vida e a morte.', '978-850-11185-8', 320, 'https://bibliotecavirtual.com/capas/biblioteca_meia_noite.jpg', 5), 
-('Os Sete Maridos de Evelyn Hugo', 'Uma lenda de Hollywood, Evelyn Hugo, decide contar a histÛria de sua vida glamourosa e escandalosa, e de seus sete casamentos, a uma jornalista desconhecida.', '978-850-11191-9', 368, 'https://bibliotecavirtual.com/capas/evelyn_hugo.jpg', 5), 
-('Tudo … Rio', 'Um romance intenso e lÌrico sobre amor, dor, obsess„o e o ciclo da vida, contado a partir das tragÈdias de um casal.', '978-859-28822-4', 210, 'https://bibliotecavirtual.com/capas/tudo_e_rio.jpg', 2), 
-('Harry Potter e a Pedra Filosofal', 'O primeiro livro da saga. O jovem Ûrf„o Harry Potter descobre que È um bruxo famoso e È convidado a estudar na Escola de Magia e Bruxaria de Hogwarts.', '978-853-25202-7', 224, 'https://bibliotecavirtual.com/capas/hp_pedra_filosofal.jpg', 4), 
-('A Paciente Silenciosa', 'Uma psicoterapeuta e seu paciente, que cometeu um assassinato e parou de falar, envolvem-se em um mistÈrio que testa os limites da mente humana.', '978-853-25310-2', 336, 'https://bibliotecavirtual.com/capas/paciente_silenciosa.jpg', 5), 
-('Sapiens: Uma Breve HistÛria da Humanidade', 'Uma investigaÁ„o sobre a histÛria humana, desde as origens da espÈcie atÈ as revoluÁıes cognitiva, agrÌcola e cientÌfica.', '978-852-02015-7', 464, 'https://bibliotecavirtual.com/capas/sapiens.jpg', 11), 
-('O Poder do H·bito', 'Explora a ciÍncia por tr·s de como os h·bitos se formam, como eles podem ser mudados e como impactam nossas vidas, carreiras e organizaÁıes.', '978-853-59214-1', 408, 'https://bibliotecavirtual.com/capas/poder_habito.jpg', 1), 
-('Mindset: A Nova Psicologia do Sucesso', 'A Dra. Carol S. Dweck apresenta a diferenÁa entre a mentalidade fixa e a mentalidade de crescimento e como a ˙ltima pode levar ao sucesso.', '978-853-95092-5', 304, 'https://bibliotecavirtual.com/capas/mindset.jpg', 9), 
-('Como Fazer Amigos e Influenciar Pessoas', 'Um cl·ssico de autoajuda que oferece conselhos pr·ticos sobre relaÁıes interpessoais, comunicaÁ„o e como se tornar uma pessoa influente.', '978-850-40131-2', 288, 'https://bibliotecavirtual.com/capas/como_fazer_amigos.jpg', 14), 
-('Pai Rico, Pai Pobre', 'Um livro de finanÁas pessoais que ensina a import‚ncia da educaÁ„o financeira, independÍncia e construÁ„o de ativos.', '978-858-00403-7', 336, 'https://bibliotecavirtual.com/capas/pai_rico_pai_pobre.jpg', 7), 
-('Uma Breve HistÛria do Tempo', 'Stephen Hawking explica conceitos de cosmologia, como buracos negros, singularidades e a natureza do tempo, de forma acessÌvel.', '978-857-82706-9', 256, 'https://bibliotecavirtual.com/capas/historia_tempo.jpg', 2), 
-('A Culpa … das Estrelas', 'Dois adolescentes, Hazel e Gus, que se conhecem em um grupo de apoio a pacientes com c‚ncer, se apaixonam e embarcam em uma jornada comovente.', '978-858-05734-8', 288, 'https://bibliotecavirtual.com/capas/culpa_estrelas.jpg', 13), 
-('Extraordin·rio', 'August Pullman, um menino com deformidade facial, enfrenta o desafio de frequentar a escola regular pela primeira vez.', '978-853-25296-9', 320, 'https://bibliotecavirtual.com/capas/extraordinario.jpg', 5), 
-('A Menina Que Roubava Livros', 'Narrado pela Morte, conta a histÛria de Liesel Meminger, uma garota na Alemanha nazista que encontra conforto roubando livros.', '978-857-82706-1', 480, 'https://bibliotecavirtual.com/capas/menina_roubava_livros.jpg', 5), 
-('O Nome do Vento', 'Kvothe, um herÛi lend·rio, conta a um cronista a verdadeira histÛria de sua vida: desde a inf‚ncia em uma trupe de artistas atÈ se tornar um temido mago.', '978-859-92964-8', 656, 'https://bibliotecavirtual.com/capas/nome_do_vento.jpg', 8), 
-('CÛdigo Da Vinci', 'O simbologista Robert Langdon se envolve em uma conspiraÁ„o internacional apÛs um assassinato no Museu do Louvre, que o leva a desvendar segredos da histÛria crist„.', '978-853-59051-9', 448, 'https://bibliotecavirtual.com/capas/codigo_da_vinci.jpg', 6), 
-('Fahrenheit 451', 'Em uma sociedade futurista onde livros s„o proibidos e queimados, o bombeiro Guy Montag comeÁa a questionar a censura e o vazio de sua vida.', '978-853-59005-7', 208, 'https://bibliotecavirtual.com/capas/fahrenheit_451.jpg', 1), 
-('A RevoluÁ„o dos Bichos', 'Uma alegoria polÌtica onde os animais de uma fazenda se rebelam contra os humanos, mas acabam criando uma nova tirania sob a lideranÁa dos porcos.', '978-853-59118-5', 160, 'https://bibliotecavirtual.com/capas/revolucao_bichos.jpg', 1);
-
-CREATE PROCEDURE adicionarLivro
-	@Titulo NVARCHAR(150),
-	@Sinopse NVARCHAR(MAX),
-	@ISBN VARCHAR(15),
-	@NumPaginas INT,
-	@CapaURL NVARCHAR(500),
-	@EditoraId INT
-AS
-BEGIN
-	SET NOCOUNT ON;
-	INSERT INTO Livro(Titulo, Sinopse, ISBN, NumPaginas, CapaURL, EditoraId)
-	VALUES (@Titulo, @Sinopse, @ISBN, @NumPaginas, @CapaURL, @EditoraId)
-END
-
-
+('Os Sete Maridos de Evelyn Hugo', 'Uma lenda de Hollywood, Evelyn Hugo, decide contar a hist√≥ria de sua vida glamourosa e escandalosa, e de seus sete casamentos, a uma jornalista desconhecida.', '978-850-11191-9', 368, 'https://bibliotecavirtual.com/capas/evelyn_hugo.jpg', 5), 
+('Tudo √â Rio', 'Um romance intenso e l√≠rico sobre amor, dor, obsess√£o e o ciclo da vida, contado a partir das trag√©dias de um casal.', '978-859-28822-4', 210, 'https://bibliotecavirtual.com/capas/tudo_e_rio.jpg', 2), 
+('Harry Potter e a Pedra Filosofal', 'O primeiro livro da saga. O jovem √≥rf√£o Harry Potter descobre que √© um bruxo famoso e √© convidado a estudar na Escola de Magia e Bruxaria de Hogwarts.', '978-853-25202-7', 224, 'https://bibliotecavirtual.com/capas/hp_pedra_filosofal.jpg', 4), 
+('A Paciente Silenciosa', 'Uma psicoterapeuta e seu paciente, que cometeu um assassinato e parou de falar, envolvem-se em um mist√©rio que testa os limites da mente humana.', '978-853-25310-2', 336, 'https://bibliotecavirtual.com/capas/paciente_silenciosa.jpg', 5), 
+('Sapiens: Uma Breve Hist√≥ria da Humanidade', 'Uma investiga√ß√£o sobre a hist√≥ria humana, desde as origens da esp√©cie at√© as revolu√ß√µes cognitiva, agr√≠cola e cient√≠fica.', '978-852-02015-7', 464, 'https://bibliotecavirtual.com/capas/sapiens.jpg', 11), 
+('O Poder do H√°bito', 'Explora a ci√™ncia por tr√°s de como os h√°bitos se formam, como eles podem ser mudados e como impactam nossas vidas, carreiras e organiza√ß√µes.', '978-853-59214-1', 408, 'https://bibliotecavirtual.com/capas/poder_habito.jpg', 1), 
+('Mindset: A Nova Psicologia do Sucesso', 'A Dra. Carol S. Dweck apresenta a diferen√ßa entre a mentalidade fixa e a mentalidade de crescimento e como a √∫ltima pode levar ao sucesso.', '978-853-95092-5', 304, 'https://bibliotecavirtual.com/capas/mindset.jpg', 9), 
+('Como Fazer Amigos e Influenciar Pessoas', 'Um cl√°ssico de autoajuda que oferece conselhos pr√°ticos sobre rela√ß√µes interpessoais, comunica√ß√£o e como se tornar uma pessoa influente.', '978-850-40131-2', 288, 'https://bibliotecavirtual.com/capas/como_fazer_amigos.jpg', 14), 
+('Pai Rico, Pai Pobre', 'Um livro de finan√ßas pessoais que ensina a import√¢ncia da educa√ß√£o financeira, independ√™ncia e constru√ß√£o de ativos.', '978-858-00403-7', 336, 'https://bibliotecavirtual.com/capas/pai_rico_pai_pobre.jpg', 7), 
+('Uma Breve Hist√≥ria do Tempo', 'Stephen Hawking explica conceitos de cosmologia, como buracos negros, singularidades e a natureza do tempo, de forma acess√≠vel.', '978-857-82706-9', 256, 'https://bibliotecavirtual.com/capas/historia_tempo.jpg', 2), 
+('A Culpa √â das Estrelas', 'Dois adolescentes, Hazel e Gus, que se conhecem em um grupo de apoio a pacientes com c√¢ncer, se apaixonam e embarcam em uma jornada comovente.', '978-858-05734-8', 288, 'https://bibliotecavirtual.com/capas/culpa_estrelas.jpg', 13), 
+('Extraordin√°rio', 'August Pullman, um menino com deformidade facial, enfrenta o desafio de frequentar a escola regular pela primeira vez.', '978-853-25296-9', 320, 'https://bibliotecavirtual.com/capas/extraordinario.jpg', 5), 
+('A Menina Que Roubava Livros', 'Narrado pela Morte, conta a hist√≥ria de Liesel Meminger, uma garota na Alemanha nazista que encontra conforto roubando livros.', '978-857-82706-1', 480, 'https://bibliotecavirtual.com/capas/menina_roubava_livros.jpg', 5), 
+('O Nome do Vento', 'Kvothe, um her√≥i lend√°rio, conta a um cronista a verdadeira hist√≥ria de sua vida: desde a inf√¢ncia em uma trupe de artistas at√© se tornar um temido mago.', '978-859-92964-8', 656, 'https://bibliotecavirtual.com/capas/nome_do_vento.jpg', 8), 
+('C√≥digo Da Vinci', 'O simbologista Robert Langdon se envolve em uma conspira√ß√£o internacional ap√≥s um assassinato no Museu do Louvre, que o leva a desvendar segredos da hist√≥ria crist√£.', '978-853-59051-9', 448, 'https://bibliotecavirtual.com/capas/codigo_da_vinci.jpg', 6), 
+('Fahrenheit 451', 'Em uma sociedade futurista onde livros s√£o proibidos e queimados, o bombeiro Guy Montag come√ßa a questionar a censura e o vazio de sua vida.', '978-853-59005-7', 208, 'https://bibliotecavirtual.com/capas/fahrenheit_451.jpg', 1), 
+('A Revolu√ß√£o dos Bichos', 'Uma alegoria pol√≠tica onde os animais de uma fazenda se rebelam contra os humanos, mas acabam criando uma nova tirania sob a lideran√ßa dos porcos.', '978-853-59118-5', 160, 'https://bibliotecavirtual.com/capas/revolucao_bichos.jpg', 1);
 
 
 --ADICIONANDO COM PROCEDURES
-EXEC adicionarLivro @Titulo = 'Um Conto de Duas Cidades', @Sinopse = 'Um romance histÛrico ambientado em Londres e Paris durante a RevoluÁ„o Francesa, focado em temas de sacrifÌcio e redenÁ„o.', @ISBN = '978-857-799195-4', @NumPaginas = 416, @CapaURL = 'https://bibliotecavirtual.com/capas/conto_duas_cidades.jpg', @EditoraId = 15;
-EXEC adicionarLivro @Titulo = 'Mistborn: O ImpÈrio Final', @Sinopse = 'Kelsier, um ladr„o talentoso, recruta uma equipe para derrubar um impÈrio que oprime a humanidade h· mil anos, usando poderes de Alomancia.', @ISBN = '978-857-686525-4', @NumPaginas = 640, @CapaURL = 'https://bibliotecavirtual.com/capas/imperio_final.jpg', @EditoraId = 8;
-EXEC adicionarLivro @Titulo = 'O Castelo Animado', @Sinopse = 'Sophie È amaldiÁoada com a forma de uma velha e busca a cura no castelo m·gico e ambulante do enigm·tico mago Howl.', @ISBN = '978-857-827827-7', @NumPaginas = 336, @CapaURL = 'https://bibliotecavirtual.com/capas/castelo_animado.jpg', @EditoraId = 5;
-EXEC adicionarLivro @Titulo = 'A Coroa de Midnight (Trono de Vidro #2)', @Sinopse = 'Celaena Sardothien deve se equilibrar entre sua lealdade ‡ coroa e sua luta contra as forÁas obscuras que ameaÁam Erilea.', @ISBN = '978-850-140138-0', @NumPaginas = 384, @CapaURL = 'https://bibliotecavirtual.com/capas/coroa_midnight.jpg', @EditoraId = 3;
-EXEC adicionarLivro @Titulo = 'Garota Exemplar', @Sinopse = 'No anivers·rio de cinco anos de casamento, a esposa de Nick desaparece, e ele se torna o principal suspeito no jogo de gato e rato.', @ISBN = '978-853-252870-5', @NumPaginas = 480, @CapaURL = 'https://bibliotecavirtual.com/capas/garota_exemplar.jpg', @EditoraId = 5;
-EXEC adicionarLivro @Titulo = 'Assassinato no Expresso do Oriente', @Sinopse = 'O famoso detetive Hercule Poirot investiga um assassinato a bordo do luxuoso trem, descobrindo que todos os passageiros s„o suspeitos.', @ISBN = '978-852-543160-5', @NumPaginas = 256, @CapaURL = 'https://bibliotecavirtual.com/capas/expresso_oriente.jpg', @EditoraId = 1;
-EXEC adicionarLivro @Titulo = 'A Garota no Trem', @Sinopse = 'Rachel, uma alcoÛlatra, testemunha algo perturbador em uma casa que ela observa diariamente de seu trem, e se envolve em uma investigaÁ„o.', @ISBN = '978-855-100067-1', @NumPaginas = 376, @CapaURL = 'https://bibliotecavirtual.com/capas/garota_trem.jpg', @EditoraId = 10;
-EXEC adicionarLivro @Titulo = 'O SilÍncio dos Inocentes', @Sinopse = 'Uma jovem estagi·ria do FBI È designada a entrevistar o brilhante, mas perigoso, Dr. Hannibal Lecter para ajudar a capturar um serial killer.', @ISBN = '978-857-799401-4', @NumPaginas = 368, @CapaURL = 'https://bibliotecavirtual.com/capas/silencio_inocentes.jpg', @EditoraId = 15;
-EXEC adicionarLivro @Titulo = 'O Segredo', @Sinopse = 'Livro baseado na lei da atraÁ„o, ensinando como o poder do pensamento positivo e visualizaÁ„o pode mudar a vida das pessoas.', @ISBN = '978-859-929501-7', @NumPaginas = 216, @CapaURL = 'https://bibliotecavirtual.com/capas/o_segredo.jpg', @EditoraId = 7;
-EXEC adicionarLivro @Titulo = 'H·bitos AtÙmicos', @Sinopse = 'Um guia pr·tico e comprovado para criar bons h·bitos e se livrar dos maus h·bitos em pequenos passos, usando a regra dos 4 passos.', @ISBN = '978-854-700057-0', @NumPaginas = 320, @CapaURL = 'https://bibliotecavirtual.com/capas/habitos_atomicos.jpg', @EditoraId = 10;
-EXEC adicionarLivro @Titulo = 'As Armas da Persuas„o', @Sinopse = 'Robert Cialdini explica os 6 princÌpios psicolÛgicos universais que influenciam as decisıes humanas, desde vendas atÈ polÌtica.', @ISBN = '978-857-542023-3', @NumPaginas = 320, @CapaURL = 'https://bibliotecavirtual.com/capas/armas_persuasao.jpg', @EditoraId = 9;
-EXEC adicionarLivro @Titulo = 'Elon Musk: Como o CEO da SpaceX e Tesla est· Moldando Nosso Futuro', @Sinopse = 'Uma biografia fascinante de Elon Musk, cobrindo sua inf‚ncia, a criaÁ„o de PayPal, SpaceX e Tesla, e sua vis„o para a colonizaÁ„o de Marte.', @ISBN = '978-858-057861-6', @NumPaginas = 416, @CapaURL = 'https://bibliotecavirtual.com/capas/elon_musk.jpg', @EditoraId = 5;
-EXEC adicionarLivro @Titulo = 'Minimalismo Digital', @Sinopse = 'O autor Cal Newport propıe um modelo para usar a tecnologia de forma intencional e focar no que realmente È valioso na vida.', @ISBN = '978-855-081035-7', @NumPaginas = 304, @CapaURL = 'https://bibliotecavirtual.com/capas/minimalismo_digital.jpg', @EditoraId = 11;
-EXEC adicionarLivro @Titulo = 'O Andar do BÍbado', @Sinopse = 'Uma exploraÁ„o divertida e provocante sobre o papel do acaso em nossas vidas e por que nos esforÁamos para ignor·-lo.', @ISBN = '978-853-591147-3', @NumPaginas = 368, @CapaURL = 'https://bibliotecavirtual.com/capas/andar_bebado.jpg', @EditoraId = 1;
-EXEC adicionarLivro @Titulo = 'MemÛrias PÛstumas de Br·s Cubas', @Sinopse = 'Narrativa pÛstuma onde o defunto-autor Br·s Cubas conta sua vida com sarcasmo e ceticismo, analisando a sociedade da Època.', @ISBN = '978-858-077053-3', @NumPaginas = 304, @CapaURL = 'https://bibliotecavirtual.com/capas/memorias_postumas.jpg', @EditoraId = 15;
-EXEC adicionarLivro @Titulo = 'Grande Sert„o: Veredas', @Sinopse = 'O maior Èpico de Guimar„es Rosa, narrado pelo jagunÁo Riobaldo, que reflete sobre o amor, o diabo e o sentido da vida no sert„o de Minas Gerais.', @ISBN = '978-850-301235-5', @NumPaginas = 624, @CapaURL = 'https://bibliotecavirtual.com/capas/grande_sertao.jpg', @EditoraId = 1;
-EXEC adicionarLivro @Titulo = 'Madame Bovary', @Sinopse = 'O romance de Gustave Flaubert sobre Emma Bovary, uma mulher frustrada com seu casamento e que busca o romance e a emoÁ„o em casos extraconjugais.', @ISBN = '978-857-799196-1', @NumPaginas = 400, @CapaURL = 'https://bibliotecavirtual.com/capas/madame_bovary.jpg', @EditoraId = 15;
-EXEC adicionarLivro @Titulo = 'A Hora da Estrela', @Sinopse = 'O ˙ltimo romance de Clarice Lispector. Conta a tr·gica histÛria de MacabÈa, uma datilÛgrafa nordestina, e sua existÍncia pobre no Rio de Janeiro.', @ISBN = '978-853-253073-9', @NumPaginas = 96, @CapaURL = 'https://bibliotecavirtual.com/capas/hora_estrela.jpg', @EditoraId = 2;
-EXEC adicionarLivro @Titulo = 'A Cidade e As Serras', @Sinopse = 'Um romance do portuguÍs EÁa de QueirÛs, que contrasta a vida luxuosa e artificial da cidade com a vida simples e prazerosa do campo.', @ISBN = '978-858-271032-4', @NumPaginas = 280, @CapaURL = 'https://bibliotecavirtual.com/capas/cidade_serras.jpg', @EditoraId = 15;
-EXEC adicionarLivro @Titulo = 'Kafka ‡ Beira-Mar', @Sinopse = 'Kafka Tamura foge de casa em busca de sua m„e e irm„. Enquanto isso, um velho com habilidades especiais procura um gato desaparecido.', @ISBN = '978-857-962057-7', @NumPaginas = 584, @CapaURL = 'https://bibliotecavirtual.com/capas/kafka_beira_mar.jpg', @EditoraId = 1;
-EXEC adicionarLivro @Titulo = 'As CrÙnicas de N·rnia: O Le„o, a Feiticeira e o Guarda-Roupa', @Sinopse = 'Quatro irm„os encontram um mundo m·gico alÈm de um guarda-roupa, onde um le„o s·bio e uma feiticeira maligna lutam pelo controle.', @ISBN = '978-852-601332-6', @NumPaginas = 208, @CapaURL = 'https://bibliotecavirtual.com/capas/narnia_leao.jpg', @EditoraId = 10;
-EXEC adicionarLivro @Titulo = 'Perdida (SÈrie Perdida #1)', @Sinopse = 'Sofia, uma garota moderna e independente, È misteriosamente transportada para o sÈculo XIX e se apaixona por um cavalheiro.', @ISBN = '978-857-686259-8', @NumPaginas = 420, @CapaURL = 'https://bibliotecavirtual.com/capas/perdida.jpg', @EditoraId = 3;
-EXEC adicionarLivro @Titulo = 'O Morro', @Sinopse = 'Um suspense psicolÛgico focado em uma famÌlia que se muda para uma casa isolada e cheia de segredos na Colina dos Olhos.', @ISBN = '978-850-111956-7', @NumPaginas = 384, @CapaURL = 'https://bibliotecavirtual.com/capas/o_morro.jpg', @EditoraId = 2;
-EXEC adicionarLivro @Titulo = 'A Garota Que Tinha Tudo', @Sinopse = 'Ani FaNelli, uma mulher que parece ter a vida perfeita, È forÁada a confrontar um evento traum·tico de seu passado adolescente.', @ISBN = '978-850-111000-7', @NumPaginas = 400, @CapaURL = 'https://bibliotecavirtual.com/capas/garota_tinha_tudo.jpg', @EditoraId = 3;
-EXEC adicionarLivro @Titulo = 'Quem È VocÍ, Alasca?', @Sinopse = 'Miles Halter se matricula em um internato para buscar o "Grande Talvez" e se apaixona por Alasca Young, uma garota enigm·tica e autodestrutiva.', @ISBN = '978-858-057088-7', @NumPaginas = 256, @CapaURL = 'https://bibliotecavirtual.com/capas/quem_e_voce_alasca.jpg', @EditoraId = 13;
-EXEC adicionarLivro @Titulo = 'O Nome da Rosa', @Sinopse = 'Um mistÈrio medieval na It·lia, onde um frade franciscano e seu noviÁo investigam uma sÈrie de mortes em um mosteiro isolado.', @ISBN = '978-850-102573-0', @NumPaginas = 560, @CapaURL = 'https://bibliotecavirtual.com/capas/nome_da_rosa.jpg', @EditoraId = 2;
-EXEC adicionarLivro @Titulo = 'Mulheres Que Correm Com os Lobos', @Sinopse = 'Uma an·lise de mitos, contos de fadas e arquÈtipos para ajudar as mulheres a redescobrirem sua forÁa interior e instintos selvagens.', @ISBN = '978-853-250917-9', @NumPaginas = 576, @CapaURL = 'https://bibliotecavirtual.com/capas/mulheres_lobos.jpg', @EditoraId = 2;
-EXEC adicionarLivro @Titulo = 'Box A Roda do Tempo: O Olho do Mundo', @Sinopse = 'Primeiro volume de uma Èpica saga de fantasia. Rand al''Thor e seus amigos devem fugir de sua vila apÛs serem atacados por criaturas das trevas.', @ISBN = '978-858-057999-6', @NumPaginas = 672, @CapaURL = 'https://bibliotecavirtual.com/capas/olho_do_mundo.jpg', @EditoraId = 5;
-EXEC adicionarLivro @Titulo = 'O Senhor das Moscas', @Sinopse = 'Um grupo de meninos brit‚nicos isolados em uma ilha deserta tentam se autogovernar, mas a natureza humana primitiva logo se manifesta.', @ISBN = '978-853-252971-9', @NumPaginas = 224, @CapaURL = 'https://bibliotecavirtual.com/capas/senhor_moscas.jpg', @EditoraId = 2;
+EXEC adicionarLivro @Titulo = 'Um Conto de Duas Cidades', @Sinopse = 'Um romance hist√≥rico ambientado em Londres e Paris durante a Revolu√ß√£o Francesa, focado em temas de sacrif√≠cio e reden√ß√£o.', @ISBN = '978-857-799195-4', @NumPaginas = 416, @CapaURL = 'https://bibliotecavirtual.com/capas/conto_duas_cidades.jpg', @EditoraId = 15;
+EXEC adicionarLivro @Titulo = 'Mistborn: O Imp√©rio Final', @Sinopse = 'Kelsier, um ladr√£o talentoso, recruta uma equipe para derrubar um imp√©rio que oprime a humanidade h√° mil anos, usando poderes de Alomancia.', @ISBN = '978-857-686525-4', @NumPaginas = 640, @CapaURL = 'https://bibliotecavirtual.com/capas/imperio_final.jpg', @EditoraId = 8;
+EXEC adicionarLivro @Titulo = 'O Castelo Animado', @Sinopse = 'Sophie √© amaldi√ßoada com a forma de uma velha e busca a cura no castelo m√°gico e ambulante do enigm√°tico mago Howl.', @ISBN = '978-857-827827-7', @NumPaginas = 336, @CapaURL = 'https://bibliotecavirtual.com/capas/castelo_animado.jpg', @EditoraId = 5;
+EXEC adicionarLivro @Titulo = 'A Coroa de Midnight (Trono de Vidro #2)', @Sinopse = 'Celaena Sardothien deve se equilibrar entre sua lealdade √† coroa e sua luta contra as for√ßas obscuras que amea√ßam Erilea.', @ISBN = '978-850-140138-0', @NumPaginas = 384, @CapaURL = 'https://bibliotecavirtual.com/capas/coroa_midnight.jpg', @EditoraId = 3;
+EXEC adicionarLivro @Titulo = 'Garota Exemplar', @Sinopse = 'No anivers√°rio de cinco anos de casamento, a esposa de Nick desaparece, e ele se torna o principal suspeito no jogo de gato e rato.', @ISBN = '978-853-252870-5', @NumPaginas = 480, @CapaURL = 'https://bibliotecavirtual.com/capas/garota_exemplar.jpg', @EditoraId = 5;
+EXEC adicionarLivro @Titulo = 'Assassinato no Expresso do Oriente', @Sinopse = 'O famoso detetive Hercule Poirot investiga um assassinato a bordo do luxuoso trem, descobrindo que todos os passageiros s√£o suspeitos.', @ISBN = '978-852-543160-5', @NumPaginas = 256, @CapaURL = 'https://bibliotecavirtual.com/capas/expresso_oriente.jpg', @EditoraId = 1;
+EXEC adicionarLivro @Titulo = 'A Garota no Trem', @Sinopse = 'Rachel, uma alco√≥latra, testemunha algo perturbador em uma casa que ela observa diariamente de seu trem, e se envolve em uma investiga√ß√£o.', @ISBN = '978-855-100067-1', @NumPaginas = 376, @CapaURL = 'https://bibliotecavirtual.com/capas/garota_trem.jpg', @EditoraId = 10;
+EXEC adicionarLivro @Titulo = 'O Sil√™ncio dos Inocentes', @Sinopse = 'Uma jovem estagi√°ria do FBI √© designada a entrevistar o brilhante, mas perigoso, Dr. Hannibal Lecter para ajudar a capturar um serial killer.', @ISBN = '978-857-799401-4', @NumPaginas = 368, @CapaURL = 'https://bibliotecavirtual.com/capas/silencio_inocentes.jpg', @EditoraId = 15;
+EXEC adicionarLivro @Titulo = 'O Segredo', @Sinopse = 'Livro baseado na lei da atra√ß√£o, ensinando como o poder do pensamento positivo e visualiza√ß√£o pode mudar a vida das pessoas.', @ISBN = '978-859-929501-7', @NumPaginas = 216, @CapaURL = 'https://bibliotecavirtual.com/capas/o_segredo.jpg', @EditoraId = 7;
+EXEC adicionarLivro @Titulo = 'H√°bitos At√¥micos', @Sinopse = 'Um guia pr√°tico e comprovado para criar bons h√°bitos e se livrar dos maus h√°bitos em pequenos passos, usando a regra dos 4 passos.', @ISBN = '978-854-700057-0', @NumPaginas = 320, @CapaURL = 'https://bibliotecavirtual.com/capas/habitos_atomicos.jpg', @EditoraId = 10;
+EXEC adicionarLivro @Titulo = 'As Armas da Persuas√£o', @Sinopse = 'Robert Cialdini explica os 6 princ√≠pios psicol√≥gicos universais que influenciam as decis√µes humanas, desde vendas at√© pol√≠tica.', @ISBN = '978-857-542023-3', @NumPaginas = 320, @CapaURL = 'https://bibliotecavirtual.com/capas/armas_persuasao.jpg', @EditoraId = 9;
+EXEC adicionarLivro @Titulo = 'Elon Musk: Como o CEO da SpaceX e Tesla est√° Moldando Nosso Futuro', @Sinopse = 'Uma biografia fascinante de Elon Musk, cobrindo sua inf√¢ncia, a cria√ß√£o de PayPal, SpaceX e Tesla, e sua vis√£o para a coloniza√ß√£o de Marte.', @ISBN = '978-858-057861-6', @NumPaginas = 416, @CapaURL = 'https://bibliotecavirtual.com/capas/elon_musk.jpg', @EditoraId = 5;
+EXEC adicionarLivro @Titulo = 'Minimalismo Digital', @Sinopse = 'O autor Cal Newport prop√µe um modelo para usar a tecnologia de forma intencional e focar no que realmente √© valioso na vida.', @ISBN = '978-855-081035-7', @NumPaginas = 304, @CapaURL = 'https://bibliotecavirtual.com/capas/minimalismo_digital.jpg', @EditoraId = 11;
+EXEC adicionarLivro @Titulo = 'O Andar do B√™bado', @Sinopse = 'Uma explora√ß√£o divertida e provocante sobre o papel do acaso em nossas vidas e por que nos esfor√ßamos para ignor√°-lo.', @ISBN = '978-853-591147-3', @NumPaginas = 368, @CapaURL = 'https://bibliotecavirtual.com/capas/andar_bebado.jpg', @EditoraId = 1;
+EXEC adicionarLivro @Titulo = 'Mem√≥rias P√≥stumas de Br√°s Cubas', @Sinopse = 'Narrativa p√≥stuma onde o defunto-autor Br√°s Cubas conta sua vida com sarcasmo e ceticismo, analisando a sociedade da √©poca.', @ISBN = '978-858-077053-3', @NumPaginas = 304, @CapaURL = 'https://bibliotecavirtual.com/capas/memorias_postumas.jpg', @EditoraId = 15;
+EXEC adicionarLivro @Titulo = 'Grande Sert√£o: Veredas', @Sinopse = 'O maior √©pico de Guimar√£es Rosa, narrado pelo jagun√ßo Riobaldo, que reflete sobre o amor, o diabo e o sentido da vida no sert√£o de Minas Gerais.', @ISBN = '978-850-301235-5', @NumPaginas = 624, @CapaURL = 'https://bibliotecavirtual.com/capas/grande_sertao.jpg', @EditoraId = 1;
+EXEC adicionarLivro @Titulo = 'Madame Bovary', @Sinopse = 'O romance de Gustave Flaubert sobre Emma Bovary, uma mulher frustrada com seu casamento e que busca o romance e a emo√ß√£o em casos extraconjugais.', @ISBN = '978-857-799196-1', @NumPaginas = 400, @CapaURL = 'https://bibliotecavirtual.com/capas/madame_bovary.jpg', @EditoraId = 15;
+EXEC adicionarLivro @Titulo = 'A Hora da Estrela', @Sinopse = 'O √∫ltimo romance de Clarice Lispector. Conta a tr√°gica hist√≥ria de Macab√©a, uma datil√≥grafa nordestina, e sua exist√™ncia pobre no Rio de Janeiro.', @ISBN = '978-853-253073-9', @NumPaginas = 96, @CapaURL = 'https://bibliotecavirtual.com/capas/hora_estrela.jpg', @EditoraId = 2;
+EXEC adicionarLivro @Titulo = 'A Cidade e As Serras', @Sinopse = 'Um romance do portugu√™s E√ßa de Queir√≥s, que contrasta a vida luxuosa e artificial da cidade com a vida simples e prazerosa do campo.', @ISBN = '978-858-271032-4', @NumPaginas = 280, @CapaURL = 'https://bibliotecavirtual.com/capas/cidade_serras.jpg', @EditoraId = 15;
+EXEC adicionarLivro @Titulo = 'Kafka √† Beira-Mar', @Sinopse = 'Kafka Tamura foge de casa em busca de sua m√£e e irm√£. Enquanto isso, um velho com habilidades especiais procura um gato desaparecido.', @ISBN = '978-857-962057-7', @NumPaginas = 584, @CapaURL = 'https://bibliotecavirtual.com/capas/kafka_beira_mar.jpg', @EditoraId = 1;
+EXEC adicionarLivro @Titulo = 'As Cr√¥nicas de N√°rnia: O Le√£o, a Feiticeira e o Guarda-Roupa', @Sinopse = 'Quatro irm√£os encontram um mundo m√°gico al√©m de um guarda-roupa, onde um le√£o s√°bio e uma feiticeira maligna lutam pelo controle.', @ISBN = '978-852-601332-6', @NumPaginas = 208, @CapaURL = 'https://bibliotecavirtual.com/capas/narnia_leao.jpg', @EditoraId = 10;
+EXEC adicionarLivro @Titulo = 'Perdida (S√©rie Perdida #1)', @Sinopse = 'Sofia, uma garota moderna e independente, √© misteriosamente transportada para o s√©culo XIX e se apaixona por um cavalheiro.', @ISBN = '978-857-686259-8', @NumPaginas = 420, @CapaURL = 'https://bibliotecavirtual.com/capas/perdida.jpg', @EditoraId = 3;
+EXEC adicionarLivro @Titulo = 'O Morro', @Sinopse = 'Um suspense psicol√≥gico focado em uma fam√≠lia que se muda para uma casa isolada e cheia de segredos na Colina dos Olhos.', @ISBN = '978-850-111956-7', @NumPaginas = 384, @CapaURL = 'https://bibliotecavirtual.com/capas/o_morro.jpg', @EditoraId = 2;
+EXEC adicionarLivro @Titulo = 'A Garota Que Tinha Tudo', @Sinopse = 'Ani FaNelli, uma mulher que parece ter a vida perfeita, √© for√ßada a confrontar um evento traum√°tico de seu passado adolescente.', @ISBN = '978-850-111000-7', @NumPaginas = 400, @CapaURL = 'https://bibliotecavirtual.com/capas/garota_tinha_tudo.jpg', @EditoraId = 3;
+EXEC adicionarLivro @Titulo = 'Quem √© Voc√™, Alasca?', @Sinopse = 'Miles Halter se matricula em um internato para buscar o "Grande Talvez" e se apaixona por Alasca Young, uma garota enigm√°tica e autodestrutiva.', @ISBN = '978-858-057088-7', @NumPaginas = 256, @CapaURL = 'https://bibliotecavirtual.com/capas/quem_e_voce_alasca.jpg', @EditoraId = 13;
+EXEC adicionarLivro @Titulo = 'O Nome da Rosa', @Sinopse = 'Um mist√©rio medieval na It√°lia, onde um frade franciscano e seu novi√ßo investigam uma s√©rie de mortes em um mosteiro isolado.', @ISBN = '978-850-102573-0', @NumPaginas = 560, @CapaURL = 'https://bibliotecavirtual.com/capas/nome_da_rosa.jpg', @EditoraId = 2;
+EXEC adicionarLivro @Titulo = 'Mulheres Que Correm Com os Lobos', @Sinopse = 'Uma an√°lise de mitos, contos de fadas e arqu√©tipos para ajudar as mulheres a redescobrirem sua for√ßa interior e instintos selvagens.', @ISBN = '978-853-250917-9', @NumPaginas = 576, @CapaURL = 'https://bibliotecavirtual.com/capas/mulheres_lobos.jpg', @EditoraId = 2;
+EXEC adicionarLivro @Titulo = 'Box A Roda do Tempo: O Olho do Mundo', @Sinopse = 'Primeiro volume de uma √©pica saga de fantasia. Rand al''Thor e seus amigos devem fugir de sua vila ap√≥s serem atacados por criaturas das trevas.', @ISBN = '978-858-057999-6', @NumPaginas = 672, @CapaURL = 'https://bibliotecavirtual.com/capas/olho_do_mundo.jpg', @EditoraId = 5;
+EXEC adicionarLivro @Titulo = 'O Senhor das Moscas', @Sinopse = 'Um grupo de meninos brit√¢nicos isolados em uma ilha deserta tentam se autogovernar, mas a natureza humana primitiva logo se manifesta.', @ISBN = '978-853-252971-9', @NumPaginas = 224, @CapaURL = 'https://bibliotecavirtual.com/capas/senhor_moscas.jpg', @EditoraId = 2;
 
 
 SELECT * FROM Livro
@@ -104,19 +88,19 @@ SELECT * FROM Livro
 
 --Inserindo Generos
 INSERT INTO Genero (NomeGenero) VALUES
-('Cl·ssico'),                           
+('Cl√°ssico'),                           
 ('Romance'),                            
 ('Fantasia'),                           
-('FicÁ„o CientÌfica'),                  
+('Fic√ß√£o Cient√≠fica'),                  
 ('Literatura Brasileira'),              
 ('Distopia'),                           
-('MistÈrio'),                           
+('Mist√©rio'),                           
 ('Policial'),                           
-('Realismo M·gico'),                    
-('HistÛrico'),                          
+('Realismo M√°gico'),                    
+('Hist√≥rico'),                          
 ('Suspense'),                           
 ('Thriller'),                           
-('N„o-FicÁ„o'),                         
+('N√£o-Fic√ß√£o'),                         
 ('Autoajuda'),                         
 ('Desenvolvimento Pessoal'),            
 ('Biografia'),                          
@@ -199,10 +183,10 @@ INSERT INTO Autor (NomeAutor) VALUES
 ('Graciliano Ramos'),
 ('Paulo Coelho'),
 ('George Orwell'),
-('Gabriel GarcÌa M·rquez'),
-('Antoine de Saint-ExupÈry'),
+('Gabriel Garc√≠a M√°rquez'),
+('Antoine de Saint-Exup√©ry'),
 ('Jane Austen'),
-('FiÛdor DostoiÈvski'),
+('Fi√≥dor Dostoi√©vski'),
 ('Arthur Conan Doyle'),
 ('Colleen Hoover'),
 ('Matt Haig'),
@@ -237,17 +221,17 @@ INSERT INTO Autor (NomeAutor) VALUES
 ('Ashlee Vance'),
 ('Cal Newport'),
 ('Leonard Mlodinow'),
-('Guimar„es Rosa'),
+('Guimar√£es Rosa'),
 ('Gustave Flaubert'),
 ('Clarice Lispector'),
-('EÁa de QueirÛs'),
+('E√ßa de Queir√≥s'),
 ('Haruki Murakami'),
 ('C. S. Lewis'),
 ('Carina Rissi'),
 ('Stephen King'),
 ('Jessica Knoll'),
 ('Umberto Eco'),
-('Clarissa Pinkola EstÈs'),
+('Clarissa Pinkola Est√©s'),
 ('Robert Jordan'),
 ('William Golding');
 
