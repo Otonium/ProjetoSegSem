@@ -98,7 +98,7 @@ namespace ReaderyMVC.Controllers
                 return RedirectToAction("Index");
             }
 
-            //* Sao os valores pega do Google
+            //* Sao os valores na qual o Google vai pegar
             var claims = resultado.Principal.Identities.First().Claims.ToList();
 
             string email = claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
@@ -112,7 +112,7 @@ namespace ReaderyMVC.Controllers
                 {
                     Email = email,
                     Nome = nome,
-                    SenhaHash = ""
+                    SenhaHash = "" // Sem nada pq aqui sera usado os cokkies
                 };
 
                 _context.Usuarios.Add(usuario);
@@ -121,6 +121,7 @@ namespace ReaderyMVC.Controllers
             //* Vai pegar os valores das Claims vinda da google
             var identity = new ClaimsIdentity(resultado.Principal.Identity, resultado.Principal.Claims);
 
+            //* Cria cookie de login local, que mantém o usuário autenticado no site
             await HttpContext.SignInAsync(
                 CookieAuthenticationDefaults.AuthenticationScheme,
                 new ClaimsPrincipal(identity)
