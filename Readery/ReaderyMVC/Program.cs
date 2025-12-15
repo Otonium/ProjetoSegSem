@@ -2,10 +2,10 @@
     using Microsoft.AspNetCore.Authentication.Google;
     using Microsoft.EntityFrameworkCore;   
     using Microsoft.EntityFrameworkCore;
-    using Gardenia_MVC.Data;
-    using Gardenia_MVC.Controllers;    
-    using Gardenia_MVC.Data;    
-    using Gardenia_MVC.Models;    
+    using ReaderyMVC.Data;
+    using ReaderyMVC.Controllers;    
+    using ReaderyMVC.Data;    
+    using ReaderyMVC.Models;    
         
         
 var builder = WebApplication.CreateBuilder(args);
