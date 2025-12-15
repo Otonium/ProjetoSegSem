@@ -15,7 +15,6 @@
 
 <body>
 
-
     <main class="container-login">
 
         <aside class="painel-esquerdo">
@@ -35,13 +34,13 @@
 
                         <div class="senha">
                             <label for="senha">Senha</label>
-                            <input type="password" id="senha" required>
+                            <input type="password" id="senha" name="senha" required>
                         </div>
                     </section>
 
                     <a href="~/Redefinicao/Index" class="link-esqueci">Esqueci minha senha</a>
 
-                    <p class="mensagemErro @(ViewBag.Erro != null ? "mostrar" : "")">
+                    <p class="erro-login @(ViewBag.Erro != null ? "mostrar" : "")">
                         @ViewBag.Erro
                     </p>
 

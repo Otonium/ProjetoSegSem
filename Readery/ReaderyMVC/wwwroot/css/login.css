@@ -152,10 +152,16 @@ body {
     border-radius: 15px;
 }
 
-.loginErro {
-    color: #B40000; 
-    display: flex;
-    visibility: hidden; 
+.erro-login {
+    color: #B40000;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+.erro-login.mostrar { 
+    display: block; 
 }
 
 .input-error {
