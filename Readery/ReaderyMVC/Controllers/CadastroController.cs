@@ -25,6 +25,7 @@ namespace ReaderyMVC.Controllers
         }
 
         [HttpPost]
+        //* Dados do usuario
         public IActionResult Criar(string nome, string email, string senha)
         {
             if (string.IsNullOrWhiteSpace(senha) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(nome))
@@ -39,11 +40,13 @@ namespace ReaderyMVC.Controllers
                 return View("Index");
             }
 
+            //* Mudando a senha para string por conta do login da Google
             byte[] senhaBytes = HashService.GerarHashBytes(senha);
             string senhaHash = Convert.ToBase64String(senhaBytes);
 
+            //? -3 por conta do local da nuvem
             var data = DateTime.Now;
-            //data.AddHours(-3);
+            data.AddHours(-3);
 
             Usuario usuario = new Usuario
             {
@@ -57,6 +60,7 @@ namespace ReaderyMVC.Controllers
             _context.Usuarios.Add(usuario);
             _context.SaveChanges();
 
+            //* Envio do email
             EmailService emailService = new EmailService(email);
 
             var user = _context.Usuarios.FirstOrDefault(u => u.Email == email);
