@@ -1,0 +1,96 @@
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\bin\Debug\net9.0\appsettings.json
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\bin\Debug\net9.0\HomepageReadery-main -MVC.staticwebassets.runtime.json
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\bin\Debug\net9.0\HomepageReadery-main -MVC.staticwebassets.endpoints.json
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\bin\Debug\net9.0\HomepageReadery-main -MVC.exe
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\bin\Debug\net9.0\HomepageReadery-main -MVC.deps.json
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\bin\Debug\net9.0\HomepageReadery-main -MVC.runtimeconfig.json
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\bin\Debug\net9.0\HomepageReadery-main -MVC.dll
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\bin\Debug\net9.0\HomepageReadery-main -MVC.pdb
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\HomepageReadery-main -MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\HomepageReadery-main -MVC.AssemblyInfoInputs.cache
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\HomepageReadery-main -MVC.AssemblyInfo.cs
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\HomepageReadery-main -MVC.csproj.CoreCompileInputs.cache
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\HomepageReadery-main -MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\HomepageReadery-main -MVC.RazorAssemblyInfo.cache
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\HomepageReadery-main -MVC.RazorAssemblyInfo.cs
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\scopedcss\bundle\HomepageReadery-main -MVC.styles.css
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\scopedcss\projectbundle\HomepageReadery-main -MVC.bundle.scp.css
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\j5nu864lsy-61n19gt1b8.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\fiin39vx68-xtxxf3hu2r.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\drxfcu9loj-bqjiyaj88i.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\fluwwg01n7-c2jlpeoesf.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\45dt3f01q7-erw9l3u2r3.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\ltgnkk04vs-aexeepp0ev.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\3wjtpe0cvj-d7shbmvgxk.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\0sh5qf1v7u-ausgxo2sd3.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\tqnh3zjoy0-k8d9w2qqmf.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\cn2h1j6ubu-cosvhxvwiu.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\8yydk75x0p-ub07r2b239.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\ypus31s6lo-fvhpjtyr6v.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\y3sbkoca0h-b7pk76d08c.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\aeyk7v1zq6-fsbi9cje9m.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\kfprxcw1tt-rzd6atqjts.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\t0vwasv2n4-ee0r1s7dh0.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\2ih8dtmf0p-dxx9fxp4il.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\6a1pp5p7qc-jd9uben2k1.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\rqaekwyop4-khv3u5hwcm.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\ufaatx331a-r4e9w2rdcm.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\82qh8qznvu-lcd1t2u6c8.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\3yp2y6jvr3-c2oey78nd0.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\vsdj0ueflt-tdbxkamptv.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\3y2cwvbq0c-j5mq2jizvt.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\1mjx1uofx3-06098lyss8.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\uwysarvwez-nvvlpmu67g.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\oaow0mkt7k-s35ty4nyc5.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\z96wucqgnq-pj5nd1wqec.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\ulu94kmmdb-46ein0sx1k.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\nfcaieoigj-v0zj4ognzu.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\t86h6w7xdo-37tfw0ft22.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\pdg243ag87-hrwsygsryq.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\fivxzvhbki-pk9g2wxc8p.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\2z02xq0bqx-ft3s53vfgj.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\a3erf2nqpt-6cfz1n2cew.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\8rizzyo214-6pdc2jztkx.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\dadh7h8hxv-493y06b0oq.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\l8gzch2jzh-iovd86k7lj.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\ny8nmogt0v-vr1egmr9el.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\w1rega5i4s-kbrnm935zg.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\aeuui5k6c2-jj8uyg4cgr.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\5ciwjb5rl5-y7v9cxd14o.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\u0texn8c1d-notf2xhcfb.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\whpjy3yxw3-h1s4sie4z3.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\tm11xh9htf-63fj8s7r0e.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\o9vsfbevwt-0j3bgjxly4.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\ir5ezfreig-47otxtyo56.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\v5wi5k9lr2-4v8eqarkd7.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\a4dpdjtkn4-356vix0kms.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\ee4df1ofja-83jwlth58m.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\6bl8mqdpmq-mrlpezrjn3.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\6uzieh257c-lzl9nlhx6b.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\n2leudtx81-ag7o75518u.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\zgkaqc8tgd-x0q3zqp4vz.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\i00hxyxpy4-0i3buxo5is.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\c4hv4ybjrt-o1o13a6vjx.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\qyoeu3sl07-ttgo8qnofa.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\s6r01u88nx-2z0ns9nrw6.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\3lg25xvg09-muycvpuwrr.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\4j6x7tj7kd-87fc7y1x7t.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\qc6abddy83-mlv21k5csn.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\kcm2kertz2-65ncseq4q5.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\h62aod94rv-65ncseq4q5.gz
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\HomepageReadery-main -MVC.dll
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\refint\HomepageReadery-main -MVC.dll
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\HomepageReadery-main -MVC.pdb
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\HomepageReadery-main -MVC.genruntimeconfig.cache
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\ref\HomepageReadery-main -MVC.dll
+C:\Users\47786092803\Downloads\HomepageReadery-main\HomepageReadery-main -MVC\obj\Debug\net9.0\compressed\pk6ffvuqs4-qhs6q6l655.gz

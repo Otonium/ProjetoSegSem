@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E3D6C8;
+    background-size: cover;
+} 
+
+
+header {
+    display: flex; /*coloca na mesma linha*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8E7253;
+    height: 10vh;
+}
+
+.logo-readery {
+    height: 70px;
+}
+
+.login {
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #ffff; /* Cor do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-family: 'Merriweather', serif;
+    margin-right: 5vh;
+    background-color: #B8A28B;
+    padding: 2vh;
+}
+
+.Inicio {
+    display: flex; /*coloca na mesma linha*/
+    justify-content: space-between;
+    align-items: end;
+}
+
+.frase-inicio {
+    margin: 50px;
+    padding: 50px;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.avre {
+    height: 100%;
+    align-items: normal;
+}
+
+/*Aumentar espaçamento */
+.Destaques-da-semana {
+    font-size: 50px;
+    display: flex; /*coloca na mesma linha*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #B8A28B;
+}
+
+.Destaques-da-semana img {
+    transition: transform 0.3s ease-in-out; /* Suaviza a animação */
+}
+
+.Destaques-da-semana img:hover {
+    transform: scale(1.2); /* Aumenta o tamanho da imagem em 20% */
+}
+
+/* faz a section ocupar o espaço restante */
+.Pesquisa-genero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%; /* Aumenta a altura para 120% da altura da tela */
+    padding: 5%;
+    font-size: 2vw;
+}
+
+.botao-pesquisa {
+    background-color: #B8A28B;
+    height: 6vh;
+    width: 20vw;
+    border-radius: 10px;
+    font-size: 2vw;
+}
+
+.carrossel-livros {
+    background-color: #B8A28B;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3vh;
+}
+
+.carrossel-livros img {
+    transition: transform 0.3s ease-in-out; /* Suaviza a animação */
+}
+
+.carrossel-livros img:hover {
+    transform: scale(1.2); /* Aumenta o tamanho da imagem em 20% */
+}
+
+.cringe {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../Rectangle\ 143.png);
+    height: 50vh;
+}
+
+.texto-cringe { 
+    position: relative; 
+    font-size: 5vh; 
+    text-shadow: rgb(33, 24, 24) 2px 2px 20px;
+}
+  
+  
+
+.logo-footer {
+    height: 70px;
+}
+
+
+.paralax {
+    background-image: url(../background.png);
+    background-repeat: no-repeat;
+    /* background-position: top bottom; */
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: AUTO;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+} 
+
+footer {
+    background-color: #8E7253;
+    display: flex; /*coloca na mesma linha*/
+    align-items: center;
+    height: 12vh;
+}
+
+.logo-footer {
+    height: 10vh;
+    margin-left: 12%;
+}
+
+.texto-footer {
+    margin-left: 30%;
+    color: white;
+}
+
+@media (min-width: 768px) {
+}
